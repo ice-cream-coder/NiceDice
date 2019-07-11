@@ -10,10 +10,26 @@
 		B0229B2A1FFC2DED00A43F7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B291FFC2DED00A43F7C /* AppDelegate.swift */; };
 		B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B2B1FFC2DED00A43F7C /* ViewController.swift */; };
 		B0229B2F1FFC2DED00A43F7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0229B2D1FFC2DED00A43F7C /* Main.storyboard */; };
-		B0229B311FFC2DED00A43F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0229B301FFC2DED00A43F7C /* Assets.xcassets */; };
-		B0229B341FFC2DED00A43F7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0229B321FFC2DED00A43F7C /* LaunchScreen.storyboard */; };
 		B0229B3F1FFC2DED00A43F7C /* Nice_DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B3E1FFC2DED00A43F7C /* Nice_DiceTests.swift */; };
 		B0229B4A1FFC2DED00A43F7C /* Nice_DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */; };
+		B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B571FFC309700A43F7C /* DiceRoll.swift */; };
+		B0229B691FFC592000A43F7C /* BasicSans-ThinIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B5B1FFC592000A43F7C /* BasicSans-ThinIt.otf */; };
+		B0229B6A1FFC592000A43F7C /* BasicSans-RegularIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B5C1FFC592000A43F7C /* BasicSans-RegularIt.otf */; };
+		B0229B6B1FFC592000A43F7C /* BasicSans-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B5D1FFC592000A43F7C /* BasicSans-BlackIt.otf */; };
+		B0229B6C1FFC592000A43F7C /* BasicSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B5E1FFC592000A43F7C /* BasicSans-Regular.otf */; };
+		B0229B6D1FFC592000A43F7C /* BasicSans-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B5F1FFC592000A43F7C /* BasicSans-BoldIt.otf */; };
+		B0229B6E1FFC592000A43F7C /* BasicSans-SemiBoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B601FFC592000A43F7C /* BasicSans-SemiBoldIt.otf */; };
+		B0229B6F1FFC592000A43F7C /* BasicSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B611FFC592000A43F7C /* BasicSans-Bold.otf */; };
+		B0229B701FFC592000A43F7C /* BasicSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B621FFC592000A43F7C /* BasicSans-Light.otf */; };
+		B0229B711FFC592000A43F7C /* BasicSans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B631FFC592000A43F7C /* BasicSans-Thin.otf */; };
+		B0229B721FFC592000A43F7C /* BasicSans-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B641FFC592000A43F7C /* BasicSans-LightIt.otf */; };
+		B0229B731FFC592000A43F7C /* BasicSans-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B651FFC592000A43F7C /* BasicSans-ExtraLight.otf */; };
+		B0229B741FFC592000A43F7C /* BasicSans-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B661FFC592000A43F7C /* BasicSans-SemiBold.otf */; };
+		B0229B751FFC592000A43F7C /* BasicSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B671FFC592000A43F7C /* BasicSans-Black.otf */; };
+		B0229B761FFC592000A43F7C /* BasicSans-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0229B681FFC592000A43F7C /* BasicSans-ExtraLightIt.otf */; };
+		B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60771FFC63D5009219C9 /* Assests.xcassets */; };
+		B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */; };
+		B0EEE65922D621B300D3BA22 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +54,6 @@
 		B0229B291FFC2DED00A43F7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0229B2B1FFC2DED00A43F7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0229B2E1FFC2DED00A43F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B0229B301FFC2DED00A43F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B0229B331FFC2DED00A43F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0229B351FFC2DED00A43F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0229B3A1FFC2DED00A43F7C /* Nice DiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice DiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0229B3E1FFC2DED00A43F7C /* Nice_DiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_DiceTests.swift; sourceTree = "<group>"; };
@@ -47,6 +61,24 @@
 		B0229B451FFC2DED00A43F7C /* Nice DiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice DiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_DiceUITests.swift; sourceTree = "<group>"; };
 		B0229B4B1FFC2DED00A43F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0229B571FFC309700A43F7C /* DiceRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRoll.swift; sourceTree = "<group>"; };
+		B0229B5B1FFC592000A43F7C /* BasicSans-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-ThinIt.otf"; sourceTree = "<group>"; };
+		B0229B5C1FFC592000A43F7C /* BasicSans-RegularIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-RegularIt.otf"; sourceTree = "<group>"; };
+		B0229B5D1FFC592000A43F7C /* BasicSans-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-BlackIt.otf"; sourceTree = "<group>"; };
+		B0229B5E1FFC592000A43F7C /* BasicSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-Regular.otf"; sourceTree = "<group>"; };
+		B0229B5F1FFC592000A43F7C /* BasicSans-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-BoldIt.otf"; sourceTree = "<group>"; };
+		B0229B601FFC592000A43F7C /* BasicSans-SemiBoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-SemiBoldIt.otf"; sourceTree = "<group>"; };
+		B0229B611FFC592000A43F7C /* BasicSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-Bold.otf"; sourceTree = "<group>"; };
+		B0229B621FFC592000A43F7C /* BasicSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-Light.otf"; sourceTree = "<group>"; };
+		B0229B631FFC592000A43F7C /* BasicSans-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-Thin.otf"; sourceTree = "<group>"; };
+		B0229B641FFC592000A43F7C /* BasicSans-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-LightIt.otf"; sourceTree = "<group>"; };
+		B0229B651FFC592000A43F7C /* BasicSans-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-ExtraLight.otf"; sourceTree = "<group>"; };
+		B0229B661FFC592000A43F7C /* BasicSans-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-SemiBold.otf"; sourceTree = "<group>"; };
+		B0229B671FFC592000A43F7C /* BasicSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-Black.otf"; sourceTree = "<group>"; };
+		B0229B681FFC592000A43F7C /* BasicSans-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		B0AD60771FFC63D5009219C9 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
+		B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +109,7 @@
 		B0229B1D1FFC2DED00A43F7C = {
 			isa = PBXGroup;
 			children = (
+				B0229B591FFC590B00A43F7C /* Supporting Files */,
 				B0229B281FFC2DED00A43F7C /* Nice Dice */,
 				B0229B3D1FFC2DED00A43F7C /* Nice DiceTests */,
 				B0229B481FFC2DED00A43F7C /* Nice DiceUITests */,
@@ -98,11 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				B0229B291FFC2DED00A43F7C /* AppDelegate.swift */,
+				B0229B571FFC309700A43F7C /* DiceRoll.swift */,
 				B0229B2B1FFC2DED00A43F7C /* ViewController.swift */,
+				B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */,
 				B0229B2D1FFC2DED00A43F7C /* Main.storyboard */,
-				B0229B301FFC2DED00A43F7C /* Assets.xcassets */,
-				B0229B321FFC2DED00A43F7C /* LaunchScreen.storyboard */,
+				B0AD60771FFC63D5009219C9 /* Assests.xcassets */,
 				B0229B351FFC2DED00A43F7C /* Info.plist */,
+				B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */,
 			);
 			path = "Nice Dice";
 			sourceTree = "<group>";
@@ -123,6 +158,35 @@
 				B0229B4B1FFC2DED00A43F7C /* Info.plist */,
 			);
 			path = "Nice DiceUITests";
+			sourceTree = "<group>";
+		};
+		B0229B591FFC590B00A43F7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0229B5A1FFC592000A43F7C /* Basic Sans */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0229B5A1FFC592000A43F7C /* Basic Sans */ = {
+			isa = PBXGroup;
+			children = (
+				B0229B5B1FFC592000A43F7C /* BasicSans-ThinIt.otf */,
+				B0229B5C1FFC592000A43F7C /* BasicSans-RegularIt.otf */,
+				B0229B5D1FFC592000A43F7C /* BasicSans-BlackIt.otf */,
+				B0229B5E1FFC592000A43F7C /* BasicSans-Regular.otf */,
+				B0229B5F1FFC592000A43F7C /* BasicSans-BoldIt.otf */,
+				B0229B601FFC592000A43F7C /* BasicSans-SemiBoldIt.otf */,
+				B0229B611FFC592000A43F7C /* BasicSans-Bold.otf */,
+				B0229B621FFC592000A43F7C /* BasicSans-Light.otf */,
+				B0229B631FFC592000A43F7C /* BasicSans-Thin.otf */,
+				B0229B641FFC592000A43F7C /* BasicSans-LightIt.otf */,
+				B0229B651FFC592000A43F7C /* BasicSans-ExtraLight.otf */,
+				B0229B661FFC592000A43F7C /* BasicSans-SemiBold.otf */,
+				B0229B671FFC592000A43F7C /* BasicSans-Black.otf */,
+				B0229B681FFC592000A43F7C /* BasicSans-ExtraLightIt.otf */,
+			);
+			path = "Basic Sans";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +296,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0229B341FFC2DED00A43F7C /* LaunchScreen.storyboard in Resources */,
-				B0229B311FFC2DED00A43F7C /* Assets.xcassets in Resources */,
+				B0229B6C1FFC592000A43F7C /* BasicSans-Regular.otf in Resources */,
+				B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */,
+				B0229B701FFC592000A43F7C /* BasicSans-Light.otf in Resources */,
+				B0229B6E1FFC592000A43F7C /* BasicSans-SemiBoldIt.otf in Resources */,
+				B0229B6A1FFC592000A43F7C /* BasicSans-RegularIt.otf in Resources */,
+				B0229B711FFC592000A43F7C /* BasicSans-Thin.otf in Resources */,
+				B0229B731FFC592000A43F7C /* BasicSans-ExtraLight.otf in Resources */,
+				B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */,
+				B0229B761FFC592000A43F7C /* BasicSans-ExtraLightIt.otf in Resources */,
+				B0229B6F1FFC592000A43F7C /* BasicSans-Bold.otf in Resources */,
+				B0229B741FFC592000A43F7C /* BasicSans-SemiBold.otf in Resources */,
 				B0229B2F1FFC2DED00A43F7C /* Main.storyboard in Resources */,
+				B0229B751FFC592000A43F7C /* BasicSans-Black.otf in Resources */,
+				B0229B6D1FFC592000A43F7C /* BasicSans-BoldIt.otf in Resources */,
+				B0229B6B1FFC592000A43F7C /* BasicSans-BlackIt.otf in Resources */,
+				B0229B721FFC592000A43F7C /* BasicSans-LightIt.otf in Resources */,
+				B0229B691FFC592000A43F7C /* BasicSans-ThinIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */,
+				B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */,
+				B0EEE65922D621B300D3BA22 /* ContainerViewController.swift in Sources */,
 				B0229B2A1FFC2DED00A43F7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +382,6 @@
 				B0229B2E1FFC2DED00A43F7C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B0229B321FFC2DED00A43F7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0229B331FFC2DED00A43F7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -427,9 +499,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
 				INFOPLIST_FILE = "Nice Dice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dawbros.Nice-Dice";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawbros.d20x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,9 +515,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
 				INFOPLIST_FILE = "Nice Dice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dawbros.Nice-Dice";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawbros.d20x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
