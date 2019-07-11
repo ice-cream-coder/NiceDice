@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         }
         lastPress = Date()
         
-        roll.add(UInt32(n))
+        _ = roll.add(UInt32(n))
         lastAdded = n
         self.updateLabels()
     }
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     
     var startLocation : CGPoint = CGPoint.zero
     func swipeUp(_ sender: UIPanGestureRecognizer, _ die: UInt32) {
-        if (sender.state == UIGestureRecognizerState.began) {
+        if (sender.state == UIGestureRecognizer.State.began) {
             roll = Roll()
             self.startLocation = sender.location(in: self.view)
         }
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
             let add = max(0, Int(yDistance / 10))
             
             roll.quickadd(UInt32(add), d: die)
-            if(sender.state == UIGestureRecognizerState.ended ) {
+            if(sender.state == UIGestureRecognizer.State.ended ) {
                 roll.finalize()
                 self.updateLabels()
             } else {

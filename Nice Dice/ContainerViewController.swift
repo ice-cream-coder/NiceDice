@@ -17,14 +17,14 @@ class ContainerViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(ContainerViewController.keyboardWillMove),
-            name: NSNotification.Name.UIKeyboardWillShow,
+            name: UIResponder.keyboardWillShowNotification,
             object: nil
         )
         
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(ContainerViewController.keyboardWillMove),
-            name: NSNotification.Name.UIKeyboardWillHide,
+            name: UIResponder.keyboardWillHideNotification,
             object: nil)
         
     }
@@ -32,11 +32,11 @@ class ContainerViewController: UIViewController {
     @objc func keyboardWillMove(sender: NSNotification) {
         guard   let userInfo = sender.userInfo,
 //                let beginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
-                let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
-                let duration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
-                let curveConstant = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
-                let curve = UIViewAnimationCurve(rawValue: curveConstant),
-                let c = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber)?.uintValue,
+                let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
+                let duration = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
+                let curveConstant = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
+                let curve = UIView.AnimationCurve(rawValue: curveConstant),
+                let c = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.uintValue,
             
                 let window = UIApplication.shared.keyWindow,
                 let rootView = window.rootViewController?.view else { return }
@@ -45,7 +45,7 @@ class ContainerViewController: UIViewController {
         let distanceFromScreenBottom = frame.maxY + self.bottomeAnchor.constant - rootView.frame.maxY
         let keyboardEndHeight = rootView.frame.height - endFrame.minY
         let bottomConstant = max(0, keyboardEndHeight - distanceFromScreenBottom)
-        let co = UIViewAnimationOptions(rawValue: c << 16)
+        let co = UIView.AnimationOptions(rawValue: c << 16)
         
         self.view.layoutIfNeeded()
         UIView.animate(withDuration: duration, delay: 0.0, options: co, animations: {
@@ -59,9 +59,9 @@ class ContainerViewController: UIViewController {
     @objc func keyboardWillHide(sender: NSNotification) {
         guard   let userInfo = sender.userInfo,
             //                let beginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
-            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
-            let duration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
-            let curveConstant = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
+            let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
+            let duration = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
+            let curveConstant = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
             let curve = UIView.AnimationCurve(rawValue: curveConstant),
             let window = UIApplication.shared.keyWindow,
             let rootView = window.rootViewController?.view else { return }

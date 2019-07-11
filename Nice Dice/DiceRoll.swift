@@ -43,13 +43,13 @@ class Roll {
     
     init(dice: Dice) {
         self.dice = dice
-        self.roll()
+        _ = self.roll()
     }
     
     init(dice: Dice, rand: @escaping ((UInt32)->UInt32) = arc4random_uniform) {
         self.dice = dice
         self.rand = rand
-        self.roll()
+        _ = self.roll()
     }
     
     func roll() -> Int {
@@ -92,7 +92,7 @@ class Roll {
     func finalize() {
         for (die, count) in self.quickDice.dice {
             for _ in 0..<count {
-                self.add(die)
+                _ = self.add(die)
             }
         }
         self.quickDice = Dice()
