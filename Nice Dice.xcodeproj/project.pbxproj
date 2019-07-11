@@ -133,11 +133,11 @@
 				B0229B291FFC2DED00A43F7C /* AppDelegate.swift */,
 				B0229B571FFC309700A43F7C /* DiceRoll.swift */,
 				B0229B2B1FFC2DED00A43F7C /* ViewController.swift */,
+				B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */,
 				B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */,
 				B0229B2D1FFC2DED00A43F7C /* Main.storyboard */,
 				B0AD60771FFC63D5009219C9 /* Assests.xcassets */,
 				B0229B351FFC2DED00A43F7C /* Info.plist */,
-				B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */,
 			);
 			path = "Nice Dice";
 			sourceTree = "<group>";

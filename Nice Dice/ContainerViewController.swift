@@ -24,7 +24,7 @@ class ContainerViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(ContainerViewController.keyboardWillMove),
-            name: NSNotification.Name.UIKeyboardDidHide,
+            name: NSNotification.Name.UIKeyboardWillHide,
             object: nil)
         
     }
@@ -43,11 +43,11 @@ class ContainerViewController: UIViewController {
         let distanceFromScreenBottom = frame.maxY + self.bottomeAnchor.constant - rootView.frame.maxY
         let keyboardEndHeight = rootView.frame.height - endFrame.minY
         let bottomConstant = max(0, keyboardEndHeight - distanceFromScreenBottom)
-        print("--")
-        print(duration)
-        print(bottomConstant)
+        
+        self.view.layoutIfNeeded()
         let animator = UIViewPropertyAnimator(duration: duration, curve: curve) {
             self.bottomeAnchor.constant = bottomConstant
+            self.view.layoutIfNeeded()
         }
         animator.startAnimation()
     }
