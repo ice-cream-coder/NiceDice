@@ -36,6 +36,8 @@ class ContainerViewController: UIViewController {
                 let duration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
                 let curveConstant = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
                 let curve = UIViewAnimationCurve(rawValue: curveConstant),
+                let c = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber)?.uintValue,
+            
                 let window = UIApplication.shared.keyWindow,
                 let rootView = window.rootViewController?.view else { return }
         
@@ -43,13 +45,15 @@ class ContainerViewController: UIViewController {
         let distanceFromScreenBottom = frame.maxY + self.bottomeAnchor.constant - rootView.frame.maxY
         let keyboardEndHeight = rootView.frame.height - endFrame.minY
         let bottomConstant = max(0, keyboardEndHeight - distanceFromScreenBottom)
+        let co = UIViewAnimationOptions(rawValue: c << 16)
         
         self.view.layoutIfNeeded()
-        let animator = UIViewPropertyAnimator(duration: duration, curve: curve) {
+        UIView.animate(withDuration: duration, delay: 0.0, options: co, animations: {
+            
             self.bottomeAnchor.constant = bottomConstant
             self.view.layoutIfNeeded()
-        }
-        animator.startAnimation()
+            
+            }, completion: nil)
     }
     
     @objc func keyboardWillHide(sender: NSNotification) {
