@@ -13,19 +13,38 @@ class ViewController: UIViewController {
     var roll = Roll()
     var lastAdded : UInt32 = 0
     var lastPress = Date()
+    var showSettings = false
     
-    @IBOutlet weak var rollLabel: UILabel!
-    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet var rollLabel: UILabel!
+    @IBOutlet var totalLabel: UILabel!
+    @IBOutlet var settingsView: UIStackView!
+    @IBOutlet var gearIndicator: UIView!
+    
+    
+    
     var orignalTransform : CGAffineTransform = CGAffineTransform()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.orignalTransform = totalLabel.transform
-        self.updateLabels();
+//        self.setColors()
+        self.updateLabels()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        setColors()
+    }
+    
+    func setColors() {
+        view.window?.tintColor = Theme.current.tintColor
+        gearIndicator.backgroundColor = Theme.current.tintColor
+        view.backgroundColor = Theme.current.backgroundColor
+        
+        setNeedsStatusBarAppearanceUpdate()
+    }
     
     func updateLabels(animate: Bool = true) {
         self.rollLabel.text = roll.toString()
@@ -55,6 +74,17 @@ class ViewController: UIViewController {
     }
     @IBAction func add_d20(_ sender: Any) {
         add(20)
+    }
+    
+    @IBAction func toggleSettings(_ sender: Any) {
+        showSettings.toggle()
+        settingsView.isHidden = !showSettings
+        gearIndicator.isHidden = !showSettings
+    }
+    
+    @IBAction func toggleColor(_ sender: Any) {
+        Theme.current.toggle()
+        setColors()
     }
     
     func add(_ n: UInt32) {
@@ -97,7 +127,7 @@ class ViewController: UIViewController {
             let currentLocation = sender.location(in: self.view)
             let yDistance =  self.startLocation.y - currentLocation.y
         
-            let add = max(0, Int(yDistance / 10))
+            let add = max(0, Int(yDistance / 20.0))
             
             roll.quickadd(UInt32(add), d: die)
             if(sender.state == UIGestureRecognizer.State.ended ) {
@@ -115,7 +145,5 @@ class ViewController: UIViewController {
         self.roll = Roll()
         self.updateLabels()
     }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle { return UIStatusBarStyle.lightContent }
 }
 

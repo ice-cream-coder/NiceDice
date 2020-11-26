@@ -26,13 +26,9 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>BasicSans-Regular.otf</string>
-		<string>BasicSans-Bold.otf</string>
-		<string>BasicSans-SemiBold.otf</string>
-		<string>BasicSans-Black.otf</string>
-		<string>BasicSans-Light.otf</string>
-		<string>BasicSans-Thin.otf</string>
-		<string>BasicSans-ExtraLight.otf</string>
+		<string>Acumin Pro Wide Light.otf</string>
+		<string>Acumin Pro Wide Semibold.otf</string>
+		<string>Acumin Pro Wide Regular.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

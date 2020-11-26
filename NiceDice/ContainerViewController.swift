@@ -13,7 +13,20 @@ class ContainerViewController: UIViewController {
     @IBOutlet var bottomeAnchor: NSLayoutConstraint!
     @IBOutlet var container: UIView!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        switch Theme.current {
+        case .black, .blue, .green, .red, .purple, .olive:
+            return .lightContent
+        default:
+            if #available(iOS 13, *) {
+                return .darkContent
+            }
+            return .default
+        }
+    }
+    
     override func viewDidLoad() {
+        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(ContainerViewController.keyboardWillMove),
@@ -26,7 +39,6 @@ class ContainerViewController: UIViewController {
             selector: #selector(ContainerViewController.keyboardWillMove),
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
-        
     }
     
     @objc func keyboardWillMove(sender: NSNotification) {
