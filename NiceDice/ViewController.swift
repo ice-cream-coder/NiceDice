@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var roll = Roll()
+    var roll = _Roll()
     var lastAdded : UInt32 = 0
     var lastPress = Date()
     var showSettings = false
@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.orignalTransform = totalLabel.transform
-//        self.setColors()
         self.updateLabels()
     }
     
@@ -89,7 +88,7 @@ class ViewController: UIViewController {
     
     func add(_ n: UInt32) {
         if lastAdded != n || lastPress.timeIntervalSinceNow < -0.75 {
-            roll = Roll()
+            roll = _Roll()
         }
         lastPress = Date()
         
@@ -120,7 +119,7 @@ class ViewController: UIViewController {
     var startLocation : CGPoint = CGPoint.zero
     func swipeUp(_ sender: UIPanGestureRecognizer, _ die: UInt32) {
         if (sender.state == UIGestureRecognizer.State.began) {
-            roll = Roll()
+            roll = _Roll()
             self.startLocation = sender.location(in: self.view)
         }
         else {
@@ -142,7 +141,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func reset(_ sender: Any) {
-        self.roll = Roll()
+        self.roll = _Roll()
         self.updateLabels()
     }
 }

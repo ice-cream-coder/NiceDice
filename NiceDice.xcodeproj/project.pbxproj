@@ -13,6 +13,8 @@
 		B0229B3F1FFC2DED00A43F7C /* Nice_DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B3E1FFC2DED00A43F7C /* Nice_DiceTests.swift */; };
 		B0229B4A1FFC2DED00A43F7C /* Nice_DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */; };
 		B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B571FFC309700A43F7C /* DiceRoll.swift */; };
+		B09E40CE257189580060E410 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B09E40CC257189580060E410 /* Model.xcdatamodeld */; };
+		B09E40D6257189D10060E410 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E40D5257189D10060E410 /* Alert.swift */; };
 		B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60771FFC63D5009219C9 /* Assests.xcassets */; };
 		B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */; };
 		B0DBC6A825702262000B8EEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DBC6A725702262000B8EEB /* Theme.swift */; };
@@ -52,6 +54,8 @@
 		B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_DiceUITests.swift; sourceTree = "<group>"; };
 		B0229B4B1FFC2DED00A43F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0229B571FFC309700A43F7C /* DiceRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRoll.swift; sourceTree = "<group>"; };
+		B09E40CD257189580060E410 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B09E40D5257189D10060E410 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B0AD60771FFC63D5009219C9 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DBC69325700CF8000B8EEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,15 +117,17 @@
 			isa = PBXGroup;
 			children = (
 				B0DBC69325700CF8000B8EEB /* Info.plist */,
+				B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */,
+				B09E40D5257189D10060E410 /* Alert.swift */,
 				B0229B291FFC2DED00A43F7C /* AppDelegate.swift */,
-				B0229B571FFC309700A43F7C /* DiceRoll.swift */,
-				B0229B2B1FFC2DED00A43F7C /* ViewController.swift */,
 				B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */,
+				B0229B571FFC309700A43F7C /* DiceRoll.swift */,
 				B0DBC6A725702262000B8EEB /* Theme.swift */,
 				B0DBC6AF25702D80000B8EEB /* TintedLabel.swift */,
-				B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */,
-				B0229B2D1FFC2DED00A43F7C /* Main.storyboard */,
+				B0229B2B1FFC2DED00A43F7C /* ViewController.swift */,
 				B0AD60771FFC63D5009219C9 /* Assests.xcassets */,
+				B0229B2D1FFC2DED00A43F7C /* Main.storyboard */,
+				B09E40CC257189580060E410 /* Model.xcdatamodeld */,
 			);
 			path = NiceDice;
 			sourceTree = "<group>";
@@ -305,8 +311,10 @@
 				B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */,
 				B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */,
 				B0DBC6B025702D80000B8EEB /* TintedLabel.swift in Sources */,
+				B09E40CE257189580060E410 /* Model.xcdatamodeld in Sources */,
 				B0DBC6A825702262000B8EEB /* Theme.swift in Sources */,
 				B0EEE65922D621B300D3BA22 /* ContainerViewController.swift in Sources */,
+				B09E40D6257189D10060E410 /* Alert.swift in Sources */,
 				B0229B2A1FFC2DED00A43F7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +611,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B09E40CC257189580060E410 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B09E40CD257189580060E410 /* Model.xcdatamodel */,
+			);
+			currentVersion = B09E40CD257189580060E410 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B0229B1E1FFC2DED00A43F7C /* Project object */;
 }

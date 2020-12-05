@@ -32,7 +32,7 @@ class Dice {
     }
 }
 
-class Roll {
+class _Roll {
     
     var dice = Dice()
     var quickDice = Dice()
@@ -46,7 +46,7 @@ class Roll {
         _ = self.roll()
     }
     
-    init(dice: Dice, rand: @escaping ((UInt32)->UInt32) = arc4random_uniform) {
+    init(dice: Dice, rand: @escaping ((UInt32) -> UInt32) = arc4random_uniform) {
         self.dice = dice
         self.rand = rand
         _ = self.roll()
