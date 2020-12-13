@@ -13,6 +13,9 @@
 		B0229B3F1FFC2DED00A43F7C /* Nice_DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B3E1FFC2DED00A43F7C /* Nice_DiceTests.swift */; };
 		B0229B4A1FFC2DED00A43F7C /* Nice_DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */; };
 		B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B571FFC309700A43F7C /* DiceRoll.swift */; };
+		B045A47C2585A6680004FE93 /* HistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A47B2585A6680004FE93 /* HistoryTVC.swift */; };
+		B045A4812585A6C50004FE93 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4802585A6C50004FE93 /* HistoryCell.swift */; };
+		B045A48A2585A8C00004FE93 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4892585A8C00004FE93 /* UIView+Constraints.swift */; };
 		B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60771FFC63D5009219C9 /* Assests.xcassets */; };
 		B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */; };
 		B0DBC6A825702262000B8EEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DBC6A725702262000B8EEB /* Theme.swift */; };
@@ -20,6 +23,7 @@
 		B0DBC6BE25703FB9000B8EEB /* Acumin Pro Wide Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0DBC6BB25703FB9000B8EEB /* Acumin Pro Wide Light.otf */; };
 		B0DBC6BF25703FB9000B8EEB /* Acumin Pro Wide Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0DBC6BC25703FB9000B8EEB /* Acumin Pro Wide Semibold.otf */; };
 		B0DBC6C025703FB9000B8EEB /* Acumin Pro Wide Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0DBC6BD25703FB9000B8EEB /* Acumin Pro Wide Regular.otf */; };
+		B0DDB4C22585AC7D00ECD359 /* NSObject+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDB4C12585AC7D00ECD359 /* NSObject+Identifier.swift */; };
 		B0EEE65922D621B300D3BA22 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,9 @@
 		B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_DiceUITests.swift; sourceTree = "<group>"; };
 		B0229B4B1FFC2DED00A43F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0229B571FFC309700A43F7C /* DiceRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRoll.swift; sourceTree = "<group>"; };
+		B045A47B2585A6680004FE93 /* HistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTVC.swift; sourceTree = "<group>"; };
+		B045A4802585A6C50004FE93 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		B045A4892585A8C00004FE93 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B0AD60771FFC63D5009219C9 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DBC69325700CF8000B8EEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +67,7 @@
 		B0DBC6BB25703FB9000B8EEB /* Acumin Pro Wide Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Wide Light.otf"; sourceTree = "<group>"; };
 		B0DBC6BC25703FB9000B8EEB /* Acumin Pro Wide Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Wide Semibold.otf"; sourceTree = "<group>"; };
 		B0DBC6BD25703FB9000B8EEB /* Acumin Pro Wide Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acumin Pro Wide Regular.otf"; sourceTree = "<group>"; };
+		B0DDB4C12585AC7D00ECD359 /* NSObject+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Identifier.swift"; sourceTree = "<group>"; };
 		B0EEE65822D621B300D3BA22 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +120,8 @@
 		B0229B281FFC2DED00A43F7C /* NiceDice */ = {
 			isa = PBXGroup;
 			children = (
+				B045A4882585A8AC0004FE93 /* Extensions */,
+				B045A47A2585A6520004FE93 /* History */,
 				B0DBC69325700CF8000B8EEB /* Info.plist */,
 				B0229B291FFC2DED00A43F7C /* AppDelegate.swift */,
 				B0229B571FFC309700A43F7C /* DiceRoll.swift */,
@@ -150,6 +160,24 @@
 				B0DBC6BA25703FB9000B8EEB /* Acumin  */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B045A47A2585A6520004FE93 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				B045A47B2585A6680004FE93 /* HistoryTVC.swift */,
+				B045A4802585A6C50004FE93 /* HistoryCell.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		B045A4882585A8AC0004FE93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B045A4892585A8C00004FE93 /* UIView+Constraints.swift */,
+				B0DDB4C12585AC7D00ECD359 /* NSObject+Identifier.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B0DBC6BA25703FB9000B8EEB /* Acumin  */ = {
@@ -305,8 +333,12 @@
 				B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */,
 				B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */,
 				B0DBC6B025702D80000B8EEB /* TintedLabel.swift in Sources */,
+				B045A48A2585A8C00004FE93 /* UIView+Constraints.swift in Sources */,
+				B0DDB4C22585AC7D00ECD359 /* NSObject+Identifier.swift in Sources */,
+				B045A47C2585A6680004FE93 /* HistoryTVC.swift in Sources */,
 				B0DBC6A825702262000B8EEB /* Theme.swift in Sources */,
 				B0EEE65922D621B300D3BA22 /* ContainerViewController.swift in Sources */,
+				B045A4812585A6C50004FE93 /* HistoryCell.swift in Sources */,
 				B0229B2A1FFC2DED00A43F7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
