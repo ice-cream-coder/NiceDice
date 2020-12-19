@@ -1,7 +1,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollViewDelegate {
 
     var roll = RollGroup()
     var lastAdded = 0
@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet var totalLabel: UILabel!
     @IBOutlet var settingsView: UIStackView!
     @IBOutlet var gearIndicator: UIView!
+    @IBOutlet var statsIndicator: UIView!
+    @IBOutlet var rightIndicator: UIView!
+    @IBOutlet var leftIndicator: UIView!
     @IBOutlet var historyContainer: UIView!
     @IBOutlet var historyContainerHeight: NSLayoutConstraint!
     
@@ -51,6 +54,9 @@ class ViewController: UIViewController {
     func setColors() {
         view.window?.tintColor = Theme.current.tintColor
         gearIndicator.backgroundColor = Theme.current.tintColor
+        statsIndicator.backgroundColor = Theme.current.tintColor
+        leftIndicator.backgroundColor = Theme.current.tintColor
+        rightIndicator.backgroundColor = Theme.current.tintColor
         view.backgroundColor = Theme.current.backgroundColor
         historyVC.setColors()
         
@@ -131,6 +137,15 @@ class ViewController: UIViewController {
         lastAdded = die
     }
     
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if let gestureRecognizer = gestureRecognizer as? UIPanGestureRecognizer {
+            
+            let velocity = gestureRecognizer.velocity(in: gestureRecognizer.view)
+            return abs(velocity.x) < abs(velocity.y)
+        }
+        return true
+    }
+    
     @IBAction func toggleSettings(_ sender: Any) {
         showSettings.toggle()
         settingsView.isHidden = !showSettings
@@ -144,5 +159,31 @@ class ViewController: UIViewController {
     
     @IBAction func toggleStats(_ sender: Any) {
         historyContainer.isHidden.toggle()
+        statsIndicator.isHidden.toggle()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let extraWidth = scrollView.contentSize.width - scrollView.frame.width
+        leftIndicator.alpha = scrollView.contentOffset.x / extraWidth
+        rightIndicator.alpha = 1 - scrollView.contentOffset.x / extraWidth
+    }
+    
+    fileprivate func snapScrollToEdge(_ scrollView: UIScrollView) {
+        let extraWidth = scrollView.contentSize.width - scrollView.frame.width
+        let snapRight = scrollView.contentOffset.x > extraWidth / 2
+        scrollView.setContentOffset(CGPoint(x: snapRight ? extraWidth : 0, y: 0), animated: true)
+//        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.2, delay: 0) { [self] in
+//            leftIndicator.alpha = snapRight ? 1.0 : 0.0
+//            rightIndicator.alpha = snapRight ? 0.0 : 1.0
+//        }
+    }
+
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        guard !decelerate else { return }
+        snapScrollToEdge(scrollView)
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        snapScrollToEdge(scrollView)
     }
 }

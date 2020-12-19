@@ -12,7 +12,8 @@ class HistoryVC: UITableViewController {
         tableView.separatorStyle = .none
         tableView.layer.borderWidth = 1
         tableView.backgroundColor = .clear
-
+        tableView.showsVerticalScrollIndicator = false
+        
         setColors()
     }
     
