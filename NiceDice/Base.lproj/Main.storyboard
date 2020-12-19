@@ -134,16 +134,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhR-pZ-9Bp" userLabel="Results">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="512"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="272"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ww" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U54-Y1-TW4" customClass="TintedLabel" customModule="NiceDice" customModuleProvider="target">
-                                                <rect key="frame" x="161.66666666666666" y="114" width="52" height="30"/>
+                                                <rect key="frame" x="161.66666666666666" y="92" width="52" height="30"/>
                                                 <fontDescription key="fontDescription" name="AcuminProWide-Medium" family="Acumin Pro Wide" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXi-Pr-em5" customClass="TintedLabel" customModule="NiceDice" customModuleProvider="target">
-                                                <rect key="frame" x="68.333333333333329" y="174" width="238.33333333333337" height="120"/>
+                                                <rect key="frame" x="68.333333333333329" y="152" width="238.33333333333337" height="120"/>
                                                 <fontDescription key="fontDescription" name="AcuminProWide-Semibold" family="Acumin Pro Wide" pointSize="120"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -153,8 +153,28 @@
                                         <constraints>
                                             <constraint firstItem="U54-Y1-TW4" firstAttribute="centerX" secondItem="vXi-Pr-em5" secondAttribute="centerX" id="3nl-76-LDd"/>
                                             <constraint firstItem="U54-Y1-TW4" firstAttribute="bottom" secondItem="vXi-Pr-em5" secondAttribute="top" constant="-30" id="O0s-05-B0F"/>
-                                            <constraint firstItem="vXi-Pr-em5" firstAttribute="centerY" secondItem="MhR-pZ-9Bp" secondAttribute="centerY" constant="-22" id="e6l-Nz-IUS"/>
+                                            <constraint firstAttribute="bottom" secondItem="vXi-Pr-em5" secondAttribute="bottom" id="lVC-YZ-wXg"/>
                                             <constraint firstItem="vXi-Pr-em5" firstAttribute="centerX" secondItem="MhR-pZ-9Bp" secondAttribute="centerX" id="z3F-ok-mBB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlf-An-YoP">
+                                        <rect key="frame" x="0.0" y="344" width="375" height="240"/>
+                                        <subviews>
+                                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvL-FW-RQB">
+                                                <rect key="frame" x="121.66666666666669" y="0.0" width="132" height="240"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="240" id="g0m-fK-nHE"/>
+                                                    <constraint firstAttribute="width" constant="132" id="hKr-xt-QxB"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="LNA-zP-WzI" kind="embed" identifier="history" id="49J-n8-z4t"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vvL-FW-RQB" firstAttribute="centerY" secondItem="Qlf-An-YoP" secondAttribute="centerY" id="VRS-hu-4Il"/>
+                                            <constraint firstItem="vvL-FW-RQB" firstAttribute="centerX" secondItem="Qlf-An-YoP" secondAttribute="centerX" id="owJ-bt-YpC"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tzz-je-csI">
@@ -342,6 +362,9 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qlf-An-YoP" firstAttribute="height" secondItem="MhR-pZ-9Bp" secondAttribute="height" multiplier="0.882353" id="wAd-ZA-5tZ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -355,6 +378,8 @@
                     </view>
                     <connections>
                         <outlet property="gearIndicator" destination="bWE-0u-tJe" id="IDH-Yv-kK7"/>
+                        <outlet property="historyContainer" destination="vvL-FW-RQB" id="3Si-0U-PtR"/>
+                        <outlet property="historyContainerHeight" destination="g0m-fK-nHE" id="ERf-2z-DwD"/>
                         <outlet property="rollLabel" destination="U54-Y1-TW4" id="6QQ-3f-n3S"/>
                         <outlet property="settingsView" destination="NTh-XP-kVr" id="Ido-QZ-bDJ"/>
                         <outlet property="totalLabel" destination="vXi-Pr-em5" id="GHO-6z-73E"/>
@@ -471,6 +496,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuA-ks-jDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-916" y="27"/>
+        </scene>
+        <!--HistoryVC-->
+        <scene sceneID="v3C-Ix-l6I">
+            <objects>
+                <tableViewController id="LNA-zP-WzI" customClass="HistoryVC" customModule="NiceDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qtp-ga-x6p">
+                        <rect key="frame" x="0.0" y="0.0" width="132" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="LNA-zP-WzI" id="aKp-mh-8t1"/>
+                            <outlet property="delegate" destination="LNA-zP-WzI" id="1cZ-j1-Uu1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFw-Cs-CxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="34"/>
         </scene>
     </scenes>
     <resources>

@@ -3,8 +3,8 @@ import UIKit
 
 class HistoryCell: UITableViewCell {
     
-    lazy var rollLabel: UILabel = {
-        let label = UILabel()
+    lazy var rollLabel: TintedLabel = {
+        let label = TintedLabel()
         label.font = UIFont(name: "Acumin Pro Wide Regular", size: 15)
         return label
     }()
@@ -22,8 +22,8 @@ class HistoryCell: UITableViewCell {
         return view
     }()
     
-    lazy var totalLabel: UILabel = {
-        let label = UILabel()
+    lazy var totalLabel: TintedLabel = {
+        let label = TintedLabel()
         label.font = UIFont(name: "Acumin Pro Wide Regular", size: 15)
         return label
     }()
@@ -65,6 +65,7 @@ class HistoryCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        selectionStyle = .none
         contentView.addSubview(stack)
         stack.pinEdges()
     }

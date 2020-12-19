@@ -14,13 +14,24 @@ class ViewController: UIViewController {
     @IBOutlet var totalLabel: UILabel!
     @IBOutlet var settingsView: UIStackView!
     @IBOutlet var gearIndicator: UIView!
+    @IBOutlet var historyContainer: UIView!
+    @IBOutlet var historyContainerHeight: NSLayoutConstraint!
+    
+    var historyVC: HistoryVC!
     
     var orignalTransform : CGAffineTransform = CGAffineTransform()
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        historyContainerHeight.constant = historyContainer.frame.height - historyContainer.frame.height.truncatingRemainder(dividingBy: 24)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         orignalTransform = totalLabel.transform
+        
         updateRollLabel()
         updateTotalLabel()
     }
@@ -31,10 +42,17 @@ class ViewController: UIViewController {
         setColors()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "history" {
+            historyVC = (segue.destination as! HistoryVC)
+        }
+    }
+    
     func setColors() {
         view.window?.tintColor = Theme.current.tintColor
         gearIndicator.backgroundColor = Theme.current.tintColor
         view.backgroundColor = Theme.current.backgroundColor
+        historyVC.setColors()
         
         setNeedsStatusBarAppearanceUpdate()
     }
@@ -53,10 +71,22 @@ class ViewController: UIViewController {
         rollLabel.text = roll.rollString()
     }
     
+    fileprivate func addCurrentRollToHistory(isNewGroup: Bool) {
+        if isNewGroup {
+            historyVC.data.append(roll)
+            historyVC.insertTop()
+        } else {
+            historyVC.data[historyVC.data.count - 1] = roll
+            historyVC.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .bottom)
+        }
+    }
+    
     @IBAction func addDice(_ sender: UITapGestureRecognizer) {
         let die = sender.view!.tag
         
-        if lastAdded != die || lastPress.timeIntervalSinceNow < -0.75 {
+        let isNewGroup = lastAdded != die || lastPress.timeIntervalSinceNow < -0.75
+        
+        if isNewGroup {
             roll = RollGroup()
         }
         lastPress = Date()
@@ -64,6 +94,9 @@ class ViewController: UIViewController {
         roll.rolls.append(Roll(die: die))
         updateRollLabel()
         updateTotalLabel()
+        
+        addCurrentRollToHistory(isNewGroup: isNewGroup)
+        
         lastAdded = die
     }
     
@@ -92,6 +125,7 @@ class ViewController: UIViewController {
             updateRollLabel()
         default:
             updateTotalLabel()
+            addCurrentRollToHistory(isNewGroup: true)
             currentPanGesture = nil
         }
         lastAdded = die
@@ -109,8 +143,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func toggleStats(_ sender: Any) {
-        let vc = HistoryTVC()
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true)
+        historyContainer.isHidden.toggle()
     }
 }
