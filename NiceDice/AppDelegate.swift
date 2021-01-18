@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if let rootViewController = window?.rootViewController as? ContainerViewController {
+            rootViewController.history = history
+        }
         return true
     }
 
@@ -25,8 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        saveContext()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -38,9 +40,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        saveContext()
     }
 
+    // MARK: - Core Data stack
 
+    lazy var history: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "History")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+
+    // MARK: - Core Data Saving support
+
+    func saveContext () {
+        let context = history.viewContext
+        do {
+            let fetchRequest = NSFetchRequest<RollGroup>(entityName: "RollGroup")
+            fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+            let historyResults = NSFetchedResultsController<RollGroup>(
+                fetchRequest: fetchRequest,
+                managedObjectContext: history.viewContext,
+                sectionNameKeyPath: nil,
+                cacheName: nil
+            )
+
+            try historyResults.performFetch()
+            while let sections = historyResults.sections,
+                  sections.count > 0,
+                  sections[0].numberOfObjects > 100 {
+
+                let rollGroup = historyResults.object(at: IndexPath(row: 100, section: 0))
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "RollGroup")
+                fetchRequest.predicate = NSPredicate(format: "date <= %@", argumentArray: [rollGroup.date!])
+                let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                try context.execute(deleteRequest)
+                try historyResults.performFetch()
+            }
+
+            if context.hasChanges {
+                try context.save()
+            }
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+    }
 }
 

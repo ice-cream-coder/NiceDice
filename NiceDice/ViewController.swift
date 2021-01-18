@@ -1,12 +1,12 @@
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollViewDelegate {
 
-    var roll = RollGroup()
+    var rollGroup: RollGroup?
     var lastAdded = 0
     var lastPress = Date()
-    var showSettings = false
     var startLocation = CGPoint.zero
     var currentPanGesture = Optional<UIPanGestureRecognizer>.none
     
@@ -19,10 +19,33 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     @IBOutlet var leftIndicator: UIView!
     @IBOutlet var historyContainer: UIView!
     @IBOutlet var historyContainerHeight: NSLayoutConstraint!
-    
+
+    var historyStore: NSPersistentContainer!
     var historyVC: HistoryVC!
     
     var orignalTransform : CGAffineTransform = CGAffineTransform()
+    var forgroundObserver: NSObjectProtocol?
+
+    lazy var historyResults: NSFetchedResultsController<RollGroup> = {
+        let request = NSFetchRequest<RollGroup>(entityName: "RollGroup")
+
+        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+
+        let controller = NSFetchedResultsController<RollGroup>(
+            fetchRequest: request,
+            managedObjectContext: historyStore.viewContext,
+            sectionNameKeyPath: nil,
+            cacheName: nil
+        )
+        controller.delegate = historyVC
+        return controller
+    }()
+
+    deinit {
+        if let forgroundObserver = forgroundObserver {
+            NotificationCenter.default.removeObserver(forgroundObserver)
+        }
+    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -32,7 +55,17 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        try? historyResults.performFetch()
+        historyVC.tableView.reloadData()
+        forgroundObserver = NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main) { [weak self] notification in
+            try? self?.historyResults.performFetch()
+            self?.historyVC.tableView.reloadData()
+            self?.historyVC.tableView.layoutIfNeeded()
+            self?.historyVC.tableView?.setContentOffset(.zero, animated: true)
+        }
+
+        rollGroup = historyResults.fetchedObjects?.first
         orignalTransform = totalLabel.transform
         
         updateRollLabel()
@@ -41,30 +74,40 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        setColors()
+
+        updateUI()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "history" {
             historyVC = (segue.destination as! HistoryVC)
+            historyVC.historyStore = historyStore
+            historyVC.historyResults = historyResults
         }
+    }
+
+    func updateUI() {
+        settingsView.isHidden = !Settings.showSettings
+        gearIndicator.isHidden = !Settings.showSettings
+        historyContainer.isHidden = !Settings.showHistory
+        statsIndicator.isHidden = !Settings.showHistory
+        setColors()
     }
     
     func setColors() {
-        view.window?.tintColor = Theme.current.tintColor
-        gearIndicator.backgroundColor = Theme.current.tintColor
-        statsIndicator.backgroundColor = Theme.current.tintColor
-        leftIndicator.backgroundColor = Theme.current.tintColor
-        rightIndicator.backgroundColor = Theme.current.tintColor
-        view.backgroundColor = Theme.current.backgroundColor
+        view.window?.tintColor = Settings.theme.tintColor
+        gearIndicator.backgroundColor = Settings.theme.tintColor
+        statsIndicator.backgroundColor = Settings.theme.tintColor
+        leftIndicator.backgroundColor = Settings.theme.tintColor
+        rightIndicator.backgroundColor = Settings.theme.tintColor
+        view.backgroundColor = Settings.theme.backgroundColor
         historyVC.setColors()
         
         setNeedsStatusBarAppearanceUpdate()
     }
     
     func updateTotalLabel(animate: Bool = true) {
-        totalLabel.text = roll.totalString()
+        totalLabel.text = rollGroup?.totalString() ?? "--"
         if animate {
             totalLabel.transform = self.orignalTransform.scaledBy(x: 1.3, y: 1.3)
             UIView.animate(withDuration: 0.75, animations: { [self] in
@@ -74,17 +117,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     }
     
     func updateRollLabel() {
-        rollLabel.text = roll.rollString()
-    }
-    
-    fileprivate func addCurrentRollToHistory(isNewGroup: Bool) {
-        if isNewGroup {
-            historyVC.data.append(roll)
-            historyVC.insertTop()
-        } else {
-            historyVC.data[historyVC.data.count - 1] = roll
-            historyVC.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .bottom)
-        }
+        rollLabel.text = rollGroup?.rollString() ?? ""
     }
     
     @IBAction func addDice(_ sender: UITapGestureRecognizer) {
@@ -93,15 +126,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
         let isNewGroup = lastAdded != die || lastPress.timeIntervalSinceNow < -0.75
         
         if isNewGroup {
-            roll = RollGroup()
+            rollGroup = RollGroup(context: historyStore.viewContext)
+            rollGroup!.date = Date()
         }
         lastPress = Date()
-        
-        roll.rolls.append(Roll(die: die))
+
+        let roll = Roll(context: historyStore.viewContext)
+        roll.date = Date()
+        roll.die = Int16(die)
+        roll.side = Int16.random(in: 1...roll.die)
+        roll.group = rollGroup
+
         updateRollLabel()
         updateTotalLabel()
-        
-        addCurrentRollToHistory(isNewGroup: isNewGroup)
         
         lastAdded = die
     }
@@ -113,7 +150,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
         switch sender.state {
         case .began:
             currentPanGesture = sender
-            roll = RollGroup()
+            rollGroup = RollGroup(context: historyStore.viewContext)
+            rollGroup?.date = Date()
             startLocation = sender.location(in: self.view)
             
         case .changed:
@@ -121,17 +159,25 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
             let dy =  self.startLocation.y - currentLocation.y
             
             let groupSize = max(1, Int(dy / 20.0))
-            
-            while roll.rolls.count > groupSize {
-                roll.rolls.removeLast()
+
+            while rollGroup!.rolls?.count ?? 0 > groupSize {
+                let roll = rollGroup!.rolls!.anyObject()! as! Roll
+                rollGroup!.removeFromRolls(roll)
             }
-            while roll.rolls.count < groupSize {
-                roll.rolls.append(Roll(die: die))
+            while rollGroup!.rolls?.count ?? Int.max < groupSize {
+                let roll = Roll(context: historyStore.viewContext)
+                roll.die = Int16(die)
+                roll.side = 0
+                rollGroup!.addToRolls(roll)
             }
             updateRollLabel()
         default:
+            for case let roll as Roll in rollGroup!.rolls! {
+                roll.side = Int16.random(in: 1...roll.die)
+            }
             updateTotalLabel()
-            addCurrentRollToHistory(isNewGroup: true)
+            historyVC.reloadFirstCell()
+            
             currentPanGesture = nil
         }
         lastAdded = die
@@ -147,19 +193,18 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     }
     
     @IBAction func toggleSettings(_ sender: Any) {
-        showSettings.toggle()
-        settingsView.isHidden = !showSettings
-        gearIndicator.isHidden = !showSettings
+        Settings.showSettings.toggle()
+        updateUI()
     }
     
     @IBAction func toggleColor(_ sender: Any) {
-        Theme.current.toggle()
-        setColors()
+        Settings.theme.toggle()
+        updateUI()
     }
     
     @IBAction func toggleStats(_ sender: Any) {
-        historyContainer.isHidden.toggle()
-        statsIndicator.isHidden.toggle()
+        Settings.showHistory.toggle()
+        updateUI()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -172,10 +217,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
         let extraWidth = scrollView.contentSize.width - scrollView.frame.width
         let snapRight = scrollView.contentOffset.x > extraWidth / 2
         scrollView.setContentOffset(CGPoint(x: snapRight ? extraWidth : 0, y: 0), animated: true)
-//        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.2, delay: 0) { [self] in
-//            leftIndicator.alpha = snapRight ? 1.0 : 0.0
-//            rightIndicator.alpha = snapRight ? 0.0 : 1.0
-//        }
     }
 
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {

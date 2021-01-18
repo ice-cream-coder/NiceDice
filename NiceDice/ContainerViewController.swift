@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 class ContainerViewController: UIViewController {
     
     @IBOutlet var bottomeAnchor: NSLayoutConstraint!
     @IBOutlet var container: UIView!
+
+    var history: NSPersistentContainer!
+    var mainController: ViewController!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        switch Theme.current {
+        switch Settings.theme {
         case .black, .blue, .green, .red, .purple, .olive:
             return .lightContent
         default:
@@ -40,14 +44,19 @@ class ContainerViewController: UIViewController {
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "main" {
+            mainController = (segue.destination as! ViewController)
+            mainController.historyStore = history
+        }
+    }
     
     @objc func keyboardWillMove(sender: NSNotification) {
         guard   let userInfo = sender.userInfo,
-//                let beginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
                 let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
                 let duration = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
                 let curveConstant = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
-                let curve = UIView.AnimationCurve(rawValue: curveConstant),
                 let c = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.uintValue,
             
                 let window = UIApplication.shared.keyWindow,
@@ -70,7 +79,6 @@ class ContainerViewController: UIViewController {
     
     @objc func keyboardWillHide(sender: NSNotification) {
         guard   let userInfo = sender.userInfo,
-            //                let beginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
             let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
             let duration = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue,
             let curveConstant = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,

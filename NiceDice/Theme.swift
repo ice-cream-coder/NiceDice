@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Theme {
+enum Theme: String {
     
     case black
     case blue
@@ -21,8 +21,6 @@ enum Theme {
     case tan
     case olive
     case white
-    
-    static var current = Theme.black
     
     mutating func toggle() {
         switch self {

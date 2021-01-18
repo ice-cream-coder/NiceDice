@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Roll" representedClassName="Roll" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="die" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="side" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RollGroup" inverseName="rolls" inverseEntity="RollGroup"/>
+    </entity>
+    <entity name="RollGroup" representedClassName="RollGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="rolls" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Roll" inverseName="group" inverseEntity="Roll"/>
+    </entity>
+    <elements>
+        <element name="Roll" positionX="-99.504638671875" positionY="66.19209289550781" width="119.4755859375" height="89"/>
+        <element name="RollGroup" positionX="-303.92431640625" positionY="93.86866760253906" width="128" height="59"/>
+    </elements>
+</model>

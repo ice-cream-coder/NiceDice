@@ -1,9 +1,12 @@
 
 import UIKit
+import CoreData
 
-class HistoryVC: UITableViewController {
-    
-    var data: [RollGroup] = []
+class HistoryVC: UITableViewController, NSFetchedResultsControllerDelegate {
+
+    var historyStore: NSPersistentContainer!
+    var historyResults: NSFetchedResultsController<RollGroup>!
+    var beganUpdates = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +21,7 @@ class HistoryVC: UITableViewController {
     }
     
     func setColors() {
-        tableView.layer.borderColor = Theme.current.tintColor.cgColor
+        tableView.layer.borderColor = Settings.theme.tintColor.cgColor
         tableView.reloadData()
     }
     
@@ -33,35 +36,37 @@ class HistoryVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         24
     }
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        historyResults.sections?.count ?? 0
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        data.count
+        historyResults.sections?[section].numberOfObjects ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HistoryCell.identifier, for: indexPath) as! HistoryCell
-        
-        let rollGroup = data[data.count - 1 - indexPath.row]
-        
+        let rollGroup = historyResults.object(at: indexPath)
         cell.rollLabel.text = rollGroup.rollString()
         cell.totalLabel.text = rollGroup.totalString()
-        
+
         cell.backgroundColor = .clear
-        
-        cell.rollView.backgroundColor = Theme.current.tintColor
-        cell.rollView.tintColor = Theme.current.backgroundColor
-        
-        cell.resultView.backgroundColor = Theme.current.backgroundColor
-        cell.resultView.tintColor = Theme.current.tintColor
-        
-        if indexPath.row != data.count - 1 {
-            cell.rollDivider.backgroundColor = Theme.current.backgroundColor
-            cell.resultDivider.backgroundColor = Theme.current.tintColor
+
+        cell.rollView.backgroundColor = Settings.theme.tintColor
+        cell.rollView.tintColor = Settings.theme.backgroundColor
+
+        cell.resultView.backgroundColor = Settings.theme.backgroundColor
+        cell.resultView.tintColor = Settings.theme.tintColor
+
+
+        cell.resultDivider.backgroundColor = Settings.theme.tintColor
+        if indexPath.row != (historyResults.sections?[indexPath.section].numberOfObjects ?? 0) - 1 {
+            cell.rollDivider.backgroundColor = Settings.theme.backgroundColor
         } else {
-            cell.rollDivider.backgroundColor = .clear
-            cell.resultDivider.backgroundColor = .clear
+            cell.rollDivider.backgroundColor = Settings.theme.tintColor
         }
-        
+
         return cell
     }
     
@@ -86,14 +91,53 @@ class HistoryVC: UITableViewController {
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         snapScrollToCellEdge()
     }
-    
-    func insertTop() {
+
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         if tableView.contentOffset == .zero {
-            tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .top)
+            beganUpdates = true
+            tableView.beginUpdates()
+        }
+    }
+
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        guard beganUpdates else { return }
+        switch type {
+        case .insert:
+            tableView.insertRows(at: [newIndexPath!], with: .top)
+        case .update:
+            tableView.reloadRows(at: [newIndexPath!], with: .none)
+        case .delete:
+            tableView.deleteRows(at: [newIndexPath!], with: .none)
+        default:
+            tableView.reloadData()
+        }
+    }
+
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        if beganUpdates {
+            tableView.endUpdates()
         } else {
             tableView.reloadData()
             tableView.layoutIfNeeded()
             tableView.setContentOffset(.zero, animated: true)
+        }
+        beganUpdates = false
+        saveContext()
+    }
+
+    func reloadFirstCell() {
+        tableView.beginUpdates()
+        tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
+        tableView.endUpdates()
+    }
+
+    private func saveContext() {
+        do {
+            if historyStore.viewContext.hasChanges {
+                try historyStore.viewContext.save()
+            }
+        } catch {
+            // Intentionally left blank
         }
     }
 }
