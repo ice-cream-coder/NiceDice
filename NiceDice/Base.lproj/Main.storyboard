@@ -458,9 +458,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="colorView" destination="Sbv-nC-rWV" id="K3L-nt-i22"/>
+                        <outlet property="diceScrollView" destination="SbJ-IV-kUh" id="xmQ-lG-cub"/>
+                        <outlet property="diceWidth" destination="gfX-vk-L52" id="UVy-FZ-Xly"/>
                         <outlet property="gearIndicator" destination="bWE-0u-tJe" id="IDH-Yv-kK7"/>
                         <outlet property="historyContainer" destination="vvL-FW-RQB" id="3Si-0U-PtR"/>
                         <outlet property="historyContainerHeight" destination="g0m-fK-nHE" id="ERf-2z-DwD"/>
+                        <outlet property="historySection" destination="Qlf-An-YoP" id="YEr-61-M9D"/>
+                        <outlet property="labelPadding" destination="O0s-05-B0F" id="LFU-fM-o4c"/>
                         <outlet property="leftIndicator" destination="fYm-0o-m7P" id="ak0-eV-pOi"/>
                         <outlet property="rightIndicator" destination="ntA-aq-C0g" id="fOO-J8-TgO"/>
                         <outlet property="rollLabel" destination="U54-Y1-TW4" id="6QQ-3f-n3S"/>

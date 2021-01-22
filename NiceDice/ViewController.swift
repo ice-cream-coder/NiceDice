@@ -17,8 +17,13 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     @IBOutlet var statsIndicator: UIView!
     @IBOutlet var rightIndicator: UIView!
     @IBOutlet var leftIndicator: UIView!
+    @IBOutlet var historySection: UIView!
     @IBOutlet var historyContainer: UIView!
     @IBOutlet var historyContainerHeight: NSLayoutConstraint!
+    @IBOutlet var diceWidth: NSLayoutConstraint!
+    @IBOutlet var diceScrollView: UIScrollView!
+    @IBOutlet var labelPadding: NSLayoutConstraint!
+    @IBOutlet var colorView: UIView!
 
     var historyStore: NSPersistentContainer!
     var historyVC: HistoryVC!
@@ -47,12 +52,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
         }
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        historyContainerHeight.constant = historyContainer.frame.height - historyContainer.frame.height.truncatingRemainder(dividingBy: 24)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        historySection.layoutIfNeeded()
+        let oldConstant = historyContainerHeight.constant
+        let newConstant = historySection.frame.height - historySection.frame.height.truncatingRemainder(dividingBy: 24)
+        if oldConstant != newConstant {
+            historyContainerHeight.constant = newConstant
+        }
+
+        adjustLayoutForScreenSize()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -65,11 +77,22 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
             self?.historyVC.tableView?.setContentOffset(.zero, animated: true)
         }
 
+        if #available(iOS 10.3, *) {
+            if UIApplication.shared.supportsAlternateIcons {
+                let gesture = UILongPressGestureRecognizer(target: self, action: #selector(matchAppIcon))
+                colorView.addGestureRecognizer(gesture)
+            }
+        }
+
         rollGroup = historyResults.fetchedObjects?.first
         orignalTransform = totalLabel.transform
         
         updateRollLabel()
         updateTotalLabel()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,6 +106,28 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
             historyVC = (segue.destination as! HistoryVC)
             historyVC.historyStore = historyStore
             historyVC.historyResults = historyResults
+        }
+    }
+
+    func adjustLayoutForScreenSize() {
+        let multiplier: CGFloat
+        if Device.size() >= .screen6_5Inch && view.window!.bounds.size.width > 400 {
+            multiplier = 1/7
+            rightIndicator.isHidden = true
+            leftIndicator.isHidden = true
+        } else {
+            multiplier = 1/6
+            rightIndicator.isHidden = false
+            leftIndicator.isHidden = false
+        }
+        let newConstraint = diceWidth.constraintWithMultiplier(multiplier)
+        diceScrollView.removeConstraint(diceWidth)
+        diceScrollView.addConstraint(newConstraint)
+        diceScrollView.layoutIfNeeded()
+        diceWidth = newConstraint
+
+        if Device.size() <= .screen4Inch { // SE first gen
+            labelPadding.constant = -15
         }
     }
 
@@ -226,5 +271,21 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         snapScrollToEdge(scrollView)
+    }
+
+    @available(iOS 10.3, *)
+    @objc func matchAppIcon() {
+        let menu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        menu.addAction(UIAlertAction(title: "Change App Icon", style: .default) { action in
+            if UIApplication.shared.alternateIconName == nil {
+                UIApplication.shared.setAlternateIconName("White")
+            } else {
+                UIApplication.shared.setAlternateIconName(nil)
+            }
+        })
+        menu.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        menu.view.tintColor = .systemBlue
+
+        present(menu, animated: true)
     }
 }

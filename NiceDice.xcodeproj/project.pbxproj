@@ -18,6 +18,13 @@
 		B045A48A2585A8C00004FE93 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4892585A8C00004FE93 /* UIView+Constraints.swift */; };
 		B077E89E25B4DF9B00771D1F /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B077E89C25B4DF9B00771D1F /* History.xcdatamodeld */; };
 		B093BA7825B607050058629C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BA7725B607050058629C /* Settings.swift */; };
+		B093BD4125B7CD910058629C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4025B7CD910058629C /* Device.swift */; };
+		B093BD4825B7CD980058629C /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4525B7CD970058629C /* Version.swift */; };
+		B093BD4925B7CD980058629C /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4625B7CD970058629C /* Type.swift */; };
+		B093BD4A25B7CD980058629C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4725B7CD980058629C /* Size.swift */; };
+		B093BD4F25B7D1640058629C /* NSLayoutConstraint+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4E25B7D1640058629C /* NSLayoutConstraint+.swift */; };
+		B093BD6925B7DD640058629C /* Icon-Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B093BD6725B7DD640058629C /* Icon-Black@2x.png */; };
+		B093BD6A25B7DD640058629C /* Icon-Black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B093BD6825B7DD640058629C /* Icon-Black@3x.png */; };
 		B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60771FFC63D5009219C9 /* Assests.xcassets */; };
 		B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */; };
 		B0DBC6A825702262000B8EEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DBC6A725702262000B8EEB /* Theme.swift */; };
@@ -63,6 +70,13 @@
 		B045A4892585A8C00004FE93 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B077E89D25B4DF9B00771D1F /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
 		B093BA7725B607050058629C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B093BD4025B7CD910058629C /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		B093BD4525B7CD970058629C /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		B093BD4625B7CD970058629C /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		B093BD4725B7CD980058629C /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		B093BD4E25B7D1640058629C /* NSLayoutConstraint+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+.swift"; sourceTree = "<group>"; };
+		B093BD6725B7DD640058629C /* Icon-Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Black@2x.png"; sourceTree = "<group>"; };
+		B093BD6825B7DD640058629C /* Icon-Black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Black@3x.png"; sourceTree = "<group>"; };
 		B0AD60771FFC63D5009219C9 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DBC69325700CF8000B8EEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +138,7 @@
 		B0229B281FFC2DED00A43F7C /* NiceDice */ = {
 			isa = PBXGroup;
 			children = (
+				B093BD3F25B7CD800058629C /* Device */,
 				B045A4882585A8AC0004FE93 /* Extensions */,
 				B045A47A2585A6520004FE93 /* History */,
 				B0DBC69325700CF8000B8EEB /* Info.plist */,
@@ -162,6 +177,7 @@
 		B0229B591FFC590B00A43F7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B093BD5325B7DB4E0058629C /* Icons */,
 				B0DBC6BA25703FB9000B8EEB /* Acumin  */,
 			);
 			path = "Supporting Files";
@@ -182,8 +198,29 @@
 			children = (
 				B045A4892585A8C00004FE93 /* UIView+Constraints.swift */,
 				B0DDB4C12585AC7D00ECD359 /* NSObject+Identifier.swift */,
+				B093BD4E25B7D1640058629C /* NSLayoutConstraint+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B093BD3F25B7CD800058629C /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				B093BD4725B7CD980058629C /* Size.swift */,
+				B093BD4625B7CD970058629C /* Type.swift */,
+				B093BD4525B7CD970058629C /* Version.swift */,
+				B093BD4025B7CD910058629C /* Device.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		B093BD5325B7DB4E0058629C /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B093BD6725B7DD640058629C /* Icon-Black@2x.png */,
+				B093BD6825B7DD640058629C /* Icon-Black@3x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		B0DBC6BA25703FB9000B8EEB /* Acumin  */ = {
@@ -308,6 +345,8 @@
 			files = (
 				B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */,
 				B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */,
+				B093BD6925B7DD640058629C /* Icon-Black@2x.png in Resources */,
+				B093BD6A25B7DD640058629C /* Icon-Black@3x.png in Resources */,
 				B0229B2F1FFC2DED00A43F7C /* Main.storyboard in Resources */,
 				B0DBC6BE25703FB9000B8EEB /* Acumin Pro Wide Light.otf in Resources */,
 				B0DBC6BF25703FB9000B8EEB /* Acumin Pro Wide Semibold.otf in Resources */,
@@ -336,13 +375,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B093BD4A25B7CD980058629C /* Size.swift in Sources */,
+				B093BD4125B7CD910058629C /* Device.swift in Sources */,
 				B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */,
 				B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */,
 				B077E89E25B4DF9B00771D1F /* History.xcdatamodeld in Sources */,
+				B093BD4825B7CD980058629C /* Version.swift in Sources */,
+				B093BD4925B7CD980058629C /* Type.swift in Sources */,
 				B0DBC6B025702D80000B8EEB /* TintedLabel.swift in Sources */,
 				B045A48A2585A8C00004FE93 /* UIView+Constraints.swift in Sources */,
 				B0DDB4C22585AC7D00ECD359 /* NSObject+Identifier.swift in Sources */,
 				B093BA7825B607050058629C /* Settings.swift in Sources */,
+				B093BD4F25B7D1640058629C /* NSLayoutConstraint+.swift in Sources */,
 				B045A47C2585A6680004FE93 /* HistoryVC.swift in Sources */,
 				B0DBC6A825702262000B8EEB /* Theme.swift in Sources */,
 				B0EEE65922D621B300D3BA22 /* ContainerViewController.swift in Sources */,
