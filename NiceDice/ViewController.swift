@@ -7,8 +7,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     var rollGroup: RollGroup?
     var lastAdded = 0
     var lastPress = Date()
-    var startLocation = CGPoint.zero
     var currentPanGesture = Optional<UIPanGestureRecognizer>.none
+    var swipeUpInitiated = false
     
     @IBOutlet var rollLabel: UILabel!
     @IBOutlet var totalLabel: UILabel!
@@ -186,24 +186,29 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
         updateTotalLabel()
         
         lastAdded = die
+
+        try? historyStore.viewContext.save()
     }
     
     @IBAction func swipeUp(_ sender: UIPanGestureRecognizer) {
         guard currentPanGesture == nil || sender == currentPanGesture else { return }
         let die = sender.view!.tag
-        
+        lastAdded = 0
         switch sender.state {
         case .began:
             currentPanGesture = sender
-            rollGroup = RollGroup(context: historyStore.viewContext)
-            rollGroup?.date = Date()
-            startLocation = sender.location(in: self.view)
-            
         case .changed:
-            let currentLocation = sender.location(in: view)
-            let dy =  self.startLocation.y - currentLocation.y
-            
+            let dy = -sender.translation(in: sender.view).y
+            guard dy >= 20.0 else { return }
+
+            if !swipeUpInitiated {
+                swipeUpInitiated = true
+                diceScrollView.panGestureRecognizer.state = .failed
+                rollGroup = RollGroup(context: historyStore.viewContext)
+                rollGroup?.date = Date()
+            }
             let groupSize = max(1, Int(dy / 20.0))
+
 
             while rollGroup!.rolls?.count ?? 0 > groupSize {
                 let roll = rollGroup!.rolls!.anyObject()! as! Roll
@@ -217,25 +222,23 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
             }
             updateRollLabel()
         default:
+            currentPanGesture = nil
+
+            guard swipeUpInitiated else { return }
+
             for case let roll as Roll in rollGroup!.rolls! {
                 roll.side = Int16.random(in: 1...roll.die)
             }
             updateTotalLabel()
             historyVC.reloadFirstCell()
-            
-            currentPanGesture = nil
+            swipeUpInitiated = false
         }
-        lastAdded = die
+
+        try? historyStore.viewContext.save()
     }
-    
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        if let gestureRecognizer = gestureRecognizer as? UIPanGestureRecognizer {
-            
-            let velocity = gestureRecognizer.velocity(in: gestureRecognizer.view)
-            print(velocity)
-            return abs(velocity.x) < abs(velocity.y)
-        }
-        return true
+
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        true
     }
     
     @IBAction func toggleSettings(_ sender: Any) {
@@ -276,13 +279,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
 
     @available(iOS 10.3, *)
     @objc func matchAppIcon() {
+        let theme = Settings.theme
+        let iconName = theme == .black ? nil : theme.rawValue
+        guard UIApplication.shared.alternateIconName != iconName else { return }
         let menu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         menu.addAction(UIAlertAction(title: "Change App Icon", style: .default) { action in
-            let theme = Settings.theme
-            let iconName = theme == .black ? nil : theme.rawValue
-            if UIApplication.shared.alternateIconName != iconName {
-                UIApplication.shared.setAlternateIconName(iconName)
-            }
+            UIApplication.shared.setAlternateIconName(iconName)
         })
         menu.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         menu.view.tintColor = .systemBlue

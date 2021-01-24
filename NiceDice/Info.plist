@@ -135,6 +135,16 @@
                     <string>Tan-AppIcon~iPhone-60</string>
                 </array>
             </dict>
+            <key>olive</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Olive-AppIcon~iPhone-20</string>
+                    <string>Olive-AppIcon~iPhone-29</string>
+                    <string>Olive-AppIcon~iPhone-40</string>
+                    <string>Olive-AppIcon~iPhone-60</string>
+                </array>
+            </dict>
             <key>white</key>
             <dict>
                 <key>CFBundleIconFiles</key>
@@ -147,7 +157,6 @@
             </dict>
 		</dict>
 	</dict>
-
     <key>CFBundleIcons~ipad</key>
     <dict>
         <key>CFBundleAlternateIcons</key>
@@ -238,6 +247,17 @@
                     <string>Tan-AppIcon~iPad-40</string>
                     <string>Tan-AppIcon~iPad-76</string>
                     <string>Tan-AppIcon~iPad-83.5</string>
+                </array>
+            </dict>
+            <key>olive</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Olive-AppIcon~iPad-20</string>
+                    <string>Olive-AppIcon~iPad-29</string>
+                    <string>Olive-AppIcon~iPad-40</string>
+                    <string>Olive-AppIcon~iPad-76</string>
+                    <string>Olive-AppIcon~iPad-83.5</string>
                 </array>
             </dict>
             <key>white</key>

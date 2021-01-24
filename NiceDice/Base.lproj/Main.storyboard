@@ -152,7 +152,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXi-Pr-em5" customClass="TintedLabel" customModule="NiceDice" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="MM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXi-Pr-em5" customClass="TintedLabel" customModule="NiceDice" customModuleProvider="target">
                                                 <rect key="frame" x="68.333333333333329" y="152" width="238.33333333333337" height="120"/>
                                                 <fontDescription key="fontDescription" name="AcuminProWide-Semibold" family="Acumin Pro Wide" pointSize="120"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,7 +162,8 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="U54-Y1-TW4" firstAttribute="centerX" secondItem="vXi-Pr-em5" secondAttribute="centerX" id="3nl-76-LDd"/>
-                                            <constraint firstItem="U54-Y1-TW4" firstAttribute="bottom" secondItem="vXi-Pr-em5" secondAttribute="top" constant="-30" id="O0s-05-B0F"/>
+                                            <constraint firstItem="U54-Y1-TW4" firstAttribute="bottom" secondItem="vXi-Pr-em5" secondAttribute="top" priority="750" constant="-30" id="O0s-05-B0F"/>
+                                            <constraint firstItem="U54-Y1-TW4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MhR-pZ-9Bp" secondAttribute="top" id="Z05-PU-Yml"/>
                                             <constraint firstAttribute="bottom" secondItem="vXi-Pr-em5" secondAttribute="bottom" id="lVC-YZ-wXg"/>
                                             <constraint firstItem="vXi-Pr-em5" firstAttribute="centerX" secondItem="MhR-pZ-9Bp" secondAttribute="centerX" id="z3F-ok-mBB"/>
                                         </constraints>
@@ -426,6 +427,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="fYm-0o-m7P" firstAttribute="centerY" secondItem="SbJ-IV-kUh" secondAttribute="centerY" id="3Kd-Ic-idE"/>
                                             <constraint firstItem="tzz-je-csI" firstAttribute="top" secondItem="SbJ-IV-kUh" secondAttribute="top" id="9Ex-gW-EGb"/>

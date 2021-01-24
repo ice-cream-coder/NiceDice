@@ -170,7 +170,23 @@
 		B045A4812585A6C50004FE93 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4802585A6C50004FE93 /* HistoryCell.swift */; };
 		B045A48A2585A8C00004FE93 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4892585A8C00004FE93 /* UIView+Constraints.swift */; };
 		B077E89E25B4DF9B00771D1F /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B077E89C25B4DF9B00771D1F /* History.xcdatamodeld */; };
-		B090B2D225BD0D0400539812 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B2D125BD0D0400539812 /* VerticalPanGestureRecognizer.swift */; };
+		B090B2E825BD1FC800539812 /* Olive-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2D725BD1FC700539812 /* Olive-AppIcon~iPhone-40@2x.png */; };
+		B090B2E925BD1FC800539812 /* Olive-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2D825BD1FC700539812 /* Olive-AppIcon~iPad-40@2x.png */; };
+		B090B2EA25BD1FC800539812 /* Olive-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2D925BD1FC700539812 /* Olive-AppIcon~iPad-83.5@2x.png */; };
+		B090B2EB25BD1FC800539812 /* Olive-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2DA25BD1FC700539812 /* Olive-AppIcon~iPhone-40@3x.png */; };
+		B090B2EC25BD1FC800539812 /* Olive-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2DB25BD1FC700539812 /* Olive-AppIcon~iPad-76@2x.png */; };
+		B090B2ED25BD1FC800539812 /* Olive-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2DC25BD1FC700539812 /* Olive-AppIcon~iPhone-20@3x.png */; };
+		B090B2EE25BD1FC800539812 /* Olive-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2DD25BD1FC700539812 /* Olive-AppIcon~iPad-29@1x.png */; };
+		B090B2EF25BD1FC800539812 /* Olive-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2DE25BD1FC700539812 /* Olive-AppIcon~iPad-29@2x.png */; };
+		B090B2F025BD1FC800539812 /* Olive-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2DF25BD1FC700539812 /* Olive-AppIcon~iPhone-20@2x.png */; };
+		B090B2F125BD1FC800539812 /* Olive-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E025BD1FC700539812 /* Olive-AppIcon~iPhone-29@3x.png */; };
+		B090B2F225BD1FC800539812 /* Olive-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E125BD1FC700539812 /* Olive-AppIcon~iPad-40@1x.png */; };
+		B090B2F325BD1FC800539812 /* Olive-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E225BD1FC700539812 /* Olive-AppIcon~iPad-20@2x.png */; };
+		B090B2F425BD1FC800539812 /* Olive-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E325BD1FC700539812 /* Olive-AppIcon~iPhone-29@2x.png */; };
+		B090B2F525BD1FC800539812 /* Olive-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E425BD1FC700539812 /* Olive-AppIcon~iPhone-60@3x.png */; };
+		B090B2F625BD1FC800539812 /* Olive-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E525BD1FC700539812 /* Olive-AppIcon~iPad-76@1x.png */; };
+		B090B2F725BD1FC800539812 /* Olive-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E625BD1FC700539812 /* Olive-AppIcon~iPad-20@1x.png */; };
+		B090B2F825BD1FC800539812 /* Olive-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090B2E725BD1FC800539812 /* Olive-AppIcon~iPhone-60@2x.png */; };
 		B093BA7825B607050058629C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BA7725B607050058629C /* Settings.swift */; };
 		B093BD4125B7CD910058629C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4025B7CD910058629C /* Device.swift */; };
 		B093BD4825B7CD980058629C /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4525B7CD970058629C /* Version.swift */; };
@@ -374,7 +390,23 @@
 		B045A4802585A6C50004FE93 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		B045A4892585A8C00004FE93 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B077E89D25B4DF9B00771D1F /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
-		B090B2D125BD0D0400539812 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		B090B2D725BD1FC700539812 /* Olive-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B090B2D825BD1FC700539812 /* Olive-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B090B2D925BD1FC700539812 /* Olive-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B090B2DA25BD1FC700539812 /* Olive-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B090B2DB25BD1FC700539812 /* Olive-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B090B2DC25BD1FC700539812 /* Olive-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B090B2DD25BD1FC700539812 /* Olive-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B090B2DE25BD1FC700539812 /* Olive-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B090B2DF25BD1FC700539812 /* Olive-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B090B2E025BD1FC700539812 /* Olive-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B090B2E125BD1FC700539812 /* Olive-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B090B2E225BD1FC700539812 /* Olive-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B090B2E325BD1FC700539812 /* Olive-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B090B2E425BD1FC700539812 /* Olive-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B090B2E525BD1FC700539812 /* Olive-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B090B2E625BD1FC700539812 /* Olive-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B090B2E725BD1FC800539812 /* Olive-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olive-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
 		B093BA7725B607050058629C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B093BD4025B7CD910058629C /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B093BD4525B7CD970058629C /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
@@ -456,7 +488,6 @@
 				B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */,
 				B0229B2D1FFC2DED00A43F7C /* Main.storyboard */,
 				B0AD60771FFC63D5009219C9 /* Assests.xcassets */,
-				B090B2D125BD0D0400539812 /* VerticalPanGestureRecognizer.swift */,
 			);
 			path = NiceDice;
 			sourceTree = "<group>";
@@ -724,6 +755,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B090B2D625BD1FAD00539812 /* Olive */ = {
+			isa = PBXGroup;
+			children = (
+				B090B2E625BD1FC700539812 /* Olive-AppIcon~iPad-20@1x.png */,
+				B090B2E225BD1FC700539812 /* Olive-AppIcon~iPad-20@2x.png */,
+				B090B2DD25BD1FC700539812 /* Olive-AppIcon~iPad-29@1x.png */,
+				B090B2DE25BD1FC700539812 /* Olive-AppIcon~iPad-29@2x.png */,
+				B090B2E125BD1FC700539812 /* Olive-AppIcon~iPad-40@1x.png */,
+				B090B2D825BD1FC700539812 /* Olive-AppIcon~iPad-40@2x.png */,
+				B090B2E525BD1FC700539812 /* Olive-AppIcon~iPad-76@1x.png */,
+				B090B2DB25BD1FC700539812 /* Olive-AppIcon~iPad-76@2x.png */,
+				B090B2D925BD1FC700539812 /* Olive-AppIcon~iPad-83.5@2x.png */,
+				B090B2DF25BD1FC700539812 /* Olive-AppIcon~iPhone-20@2x.png */,
+				B090B2DC25BD1FC700539812 /* Olive-AppIcon~iPhone-20@3x.png */,
+				B090B2E325BD1FC700539812 /* Olive-AppIcon~iPhone-29@2x.png */,
+				B090B2E025BD1FC700539812 /* Olive-AppIcon~iPhone-29@3x.png */,
+				B090B2D725BD1FC700539812 /* Olive-AppIcon~iPhone-40@2x.png */,
+				B090B2DA25BD1FC700539812 /* Olive-AppIcon~iPhone-40@3x.png */,
+				B090B2E725BD1FC800539812 /* Olive-AppIcon~iPhone-60@2x.png */,
+				B090B2E425BD1FC700539812 /* Olive-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Olive;
+			sourceTree = "<group>";
+		};
 		B093BD3F25B7CD800058629C /* Device */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +801,7 @@
 				B032138725BC53CC004989F1 /* Pink */,
 				B032133B25BC5301004989F1 /* Red */,
 				B03213AD25BC5422004989F1 /* Tan */,
+				B090B2D625BD1FAD00539812 /* Olive */,
 				B03213D325BC54D8004989F1 /* White */,
 			);
 			path = "Alternate Icons";
@@ -873,6 +929,7 @@
 			files = (
 				B03212DF25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@3x.png in Resources */,
 				B032130825BC5222004989F1 /* Yellow-AppIcon~iPhone-40@2x.png in Resources */,
+				B090B2F425BD1FC800539812 /* Olive-AppIcon~iPhone-29@2x.png in Resources */,
 				B032144725BC6E54004989F1 /* Pink-AppIcon~iPhone-29@2x.png in Resources */,
 				B03213CF25BC542B004989F1 /* Tan-AppIcon~iPhone-60@2x.png in Resources */,
 				B032130D25BC5222004989F1 /* Yellow-AppIcon~iPad-83.5@2x.png in Resources */,
@@ -895,6 +952,8 @@
 				B03213EB25BC54EA004989F1 /* White-AppIcon~iPad-20@2x.png in Resources */,
 				B03212C025BC4AA8004989F1 /* Blue-AppIcon~iPad-20@1x.png in Resources */,
 				B032137625BC536D004989F1 /* Purple-AppIcon~iPad-40@2x.png in Resources */,
+				B090B2EA25BD1FC800539812 /* Olive-AppIcon~iPad-83.5@2x.png in Resources */,
+				B090B2EB25BD1FC800539812 /* Olive-AppIcon~iPhone-40@3x.png in Resources */,
 				B03212B125BC4AA8004989F1 /* Blue-AppIcon~iPad-83.5@2x.png in Resources */,
 				B032135425BC5316004989F1 /* Red-AppIcon~iPhone-60@3x.png in Resources */,
 				B032143F25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@3x.png in Resources */,
@@ -902,7 +961,10 @@
 				B03212E125BC4DB6004989F1 /* Green-AppIcon~iPad-20@1x.png in Resources */,
 				B032130525BC5222004989F1 /* Yellow-AppIcon~iPad-20@2x.png in Resources */,
 				B032144125BC6E54004989F1 /* Pink-AppIcon~iPad-29@1x.png in Resources */,
+				B090B2F025BD1FC800539812 /* Olive-AppIcon~iPhone-20@2x.png in Resources */,
 				B032133725BC527F004989F1 /* Brown-AppIcon~iPhone-20@3x.png in Resources */,
+				B090B2F625BD1FC800539812 /* Olive-AppIcon~iPad-76@1x.png in Resources */,
+				B090B2F225BD1FC800539812 /* Olive-AppIcon~iPad-40@1x.png in Resources */,
 				B032143925BC6E54004989F1 /* Pink-AppIcon~iPad-20@2x.png in Resources */,
 				B032133625BC527F004989F1 /* Brown-AppIcon~iPad-40@2x.png in Resources */,
 				B032137A25BC536D004989F1 /* Purple-AppIcon~iPad-20@2x.png in Resources */,
@@ -947,9 +1009,12 @@
 				B032138325BC536D004989F1 /* Purple-AppIcon~iPad-76@2x.png in Resources */,
 				B03213C925BC542B004989F1 /* Tan-AppIcon~iPad-20@1x.png in Resources */,
 				B03213E925BC54EA004989F1 /* White-AppIcon~iPad-40@2x.png in Resources */,
+				B090B2EE25BD1FC800539812 /* Olive-AppIcon~iPad-29@1x.png in Resources */,
 				B03212E425BC4DB6004989F1 /* Green-AppIcon~iPhone-60@3x.png in Resources */,
 				B032130A25BC5222004989F1 /* Yellow-AppIcon~iPad-40@1x.png in Resources */,
+				B090B2F825BD1FC800539812 /* Olive-AppIcon~iPhone-60@2x.png in Resources */,
 				B03212B425BC4AA8004989F1 /* Blue-AppIcon~iPad-76@1x.png in Resources */,
+				B090B2E925BD1FC800539812 /* Olive-AppIcon~iPad-40@2x.png in Resources */,
 				B032130B25BC5222004989F1 /* Yellow-AppIcon~iPad-29@1x.png in Resources */,
 				B03212B325BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@2x.png in Resources */,
 				B032130925BC5222004989F1 /* Yellow-AppIcon~iPhone-60@3x.png in Resources */,
@@ -959,21 +1024,25 @@
 				B03213F125BC54EA004989F1 /* White-AppIcon~iPhone-29@3x.png in Resources */,
 				B032132A25BC527F004989F1 /* Brown-AppIcon~iPad-76@2x.png in Resources */,
 				B032135925BC5316004989F1 /* Red-AppIcon~iPad-40@1x.png in Resources */,
+				B090B2F725BD1FC800539812 /* Olive-AppIcon~iPad-20@1x.png in Resources */,
 				B032143D25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@3x.png in Resources */,
 				B032135A25BC5316004989F1 /* Red-AppIcon~iPad-29@1x.png in Resources */,
 				B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */,
 				B03213E825BC54EA004989F1 /* White-AppIcon~iPad-83.5@2x.png in Resources */,
 				B03213EC25BC54EA004989F1 /* White-AppIcon~iPhone-60@2x.png in Resources */,
 				B032132D25BC527F004989F1 /* Brown-AppIcon~iPad-20@2x.png in Resources */,
+				B090B2EF25BD1FC800539812 /* Olive-AppIcon~iPad-29@2x.png in Resources */,
 				B032143E25BC6E54004989F1 /* Pink-AppIcon~iPhone-29@3x.png in Resources */,
 				B032135D25BC5316004989F1 /* Red-AppIcon~iPad-20@1x.png in Resources */,
 				B03212E025BC4DB6004989F1 /* Green-AppIcon~iPhone-29@2x.png in Resources */,
 				B032134E25BC5316004989F1 /* Red-AppIcon~iPad-83.5@2x.png in Resources */,
 				B03212B725BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@3x.png in Resources */,
+				B090B2E825BD1FC800539812 /* Olive-AppIcon~iPhone-40@2x.png in Resources */,
 				B03213F225BC54EA004989F1 /* White-AppIcon~iPad-76@1x.png in Resources */,
 				B032130625BC5222004989F1 /* Yellow-AppIcon~iPhone-20@3x.png in Resources */,
 				B03213EE25BC54EA004989F1 /* White-AppIcon~iPhone-40@2x.png in Resources */,
 				B03213C725BC542B004989F1 /* Tan-AppIcon~iPhone-40@2x.png in Resources */,
+				B090B2F325BD1FC800539812 /* Olive-AppIcon~iPad-20@2x.png in Resources */,
 				B032135025BC5316004989F1 /* Red-AppIcon~iPad-20@2x.png in Resources */,
 				B03213EA25BC54EA004989F1 /* White-AppIcon~iPad-29@2x.png in Resources */,
 				B03212E625BC4DB6004989F1 /* Green-AppIcon~iPhone-29@3x.png in Resources */,
@@ -992,12 +1061,14 @@
 				B032144025BC6E54004989F1 /* Pink-AppIcon~iPad-83.5@2x.png in Resources */,
 				B03212BF25BC4AA8004989F1 /* Blue-AppIcon~iPad-40@1x.png in Resources */,
 				B032137C25BC536D004989F1 /* Purple-AppIcon~iPhone-29@2x.png in Resources */,
+				B090B2EC25BD1FC800539812 /* Olive-AppIcon~iPad-76@2x.png in Resources */,
 				B03213E725BC54EA004989F1 /* White-AppIcon~iPad-29@1x.png in Resources */,
 				B03213F525BC54EA004989F1 /* White-AppIcon~iPhone-20@2x.png in Resources */,
 				B03212B525BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@2x.png in Resources */,
 				B03212EA25BC4DB6004989F1 /* Green-AppIcon~iPad-76@2x.png in Resources */,
 				B03213ED25BC54EA004989F1 /* White-AppIcon~iPhone-60@3x.png in Resources */,
 				B032138225BC536D004989F1 /* Purple-AppIcon~iPhone-29@3x.png in Resources */,
+				B090B2F125BD1FC800539812 /* Olive-AppIcon~iPhone-29@3x.png in Resources */,
 				B03213F025BC54EA004989F1 /* White-AppIcon~iPhone-29@2x.png in Resources */,
 				B03212BB25BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@3x.png in Resources */,
 				B03212E925BC4DB6004989F1 /* Green-AppIcon~iPad-40@1x.png in Resources */,
@@ -1024,6 +1095,8 @@
 				B032132B25BC527F004989F1 /* Brown-AppIcon~iPad-40@1x.png in Resources */,
 				B03213BF25BC542B004989F1 /* Tan-AppIcon~iPad-83.5@2x.png in Resources */,
 				B032137F25BC536D004989F1 /* Purple-AppIcon~iPad-20@1x.png in Resources */,
+				B090B2F525BD1FC800539812 /* Olive-AppIcon~iPhone-60@3x.png in Resources */,
+				B090B2ED25BD1FC800539812 /* Olive-AppIcon~iPhone-20@3x.png in Resources */,
 				B032137725BC536D004989F1 /* Purple-AppIcon~iPad-29@2x.png in Resources */,
 				B032134D25BC5316004989F1 /* Red-AppIcon~iPad-29@2x.png in Resources */,
 				B03213F425BC54EA004989F1 /* White-AppIcon~iPhone-40@3x.png in Resources */,
@@ -1057,7 +1130,6 @@
 				B093BD4A25B7CD980058629C /* Size.swift in Sources */,
 				B093BD4125B7CD910058629C /* Device.swift in Sources */,
 				B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */,
-				B090B2D225BD0D0400539812 /* VerticalPanGestureRecognizer.swift in Sources */,
 				B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */,
 				B077E89E25B4DF9B00771D1F /* History.xcdatamodeld in Sources */,
 				B093BD4825B7CD980058629C /* Version.swift in Sources */,
