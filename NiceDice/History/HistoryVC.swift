@@ -126,6 +126,8 @@ class HistoryVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
 
     func reloadFirstCell() {
+        guard tableView(tableView, numberOfRowsInSection: 0) > 0 else { return }
+        
         tableView.beginUpdates()
         tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
         tableView.endUpdates()

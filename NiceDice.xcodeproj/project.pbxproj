@@ -13,18 +13,170 @@
 		B0229B3F1FFC2DED00A43F7C /* Nice_DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B3E1FFC2DED00A43F7C /* Nice_DiceTests.swift */; };
 		B0229B4A1FFC2DED00A43F7C /* Nice_DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */; };
 		B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0229B571FFC309700A43F7C /* DiceRoll.swift */; };
+		B03212B025BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032129E25BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@2x.png */; };
+		B03212B125BC4AA8004989F1 /* Blue-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032129F25BC4AA8004989F1 /* Blue-AppIcon~iPad-83.5@2x.png */; };
+		B03212B225BC4AA8004989F1 /* Blue-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A025BC4AA8004989F1 /* Blue-AppIcon~iPad-40@2x.png */; };
+		B03212B325BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A125BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@2x.png */; };
+		B03212B425BC4AA8004989F1 /* Blue-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A225BC4AA8004989F1 /* Blue-AppIcon~iPad-76@1x.png */; };
+		B03212B525BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A325BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@2x.png */; };
+		B03212B625BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A425BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@3x.png */; };
+		B03212B725BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A525BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@3x.png */; };
+		B03212B825BC4AA8004989F1 /* Blue-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A625BC4AA8004989F1 /* Blue-AppIcon~iPad-20@2x.png */; };
+		B03212B925BC4AA8004989F1 /* Blue-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A725BC4AA8004989F1 /* Blue-AppIcon~iPad-29@2x.png */; };
+		B03212BA25BC4AA8004989F1 /* Blue-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A825BC4AA8004989F1 /* Blue-AppIcon~iPad-29@1x.png */; };
+		B03212BB25BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212A925BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@3x.png */; };
+		B03212BC25BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212AA25BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@2x.png */; };
+		B03212BD25BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212AB25BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@3x.png */; };
+		B03212BF25BC4AA8004989F1 /* Blue-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212AD25BC4AA8004989F1 /* Blue-AppIcon~iPad-40@1x.png */; };
+		B03212C025BC4AA8004989F1 /* Blue-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212AE25BC4AA8004989F1 /* Blue-AppIcon~iPad-20@1x.png */; };
+		B03212C125BC4AA8004989F1 /* Blue-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212AF25BC4AA8004989F1 /* Blue-AppIcon~iPad-76@2x.png */; };
+		B03212DB25BC4DB6004989F1 /* Green-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212CA25BC4DB6004989F1 /* Green-AppIcon~iPhone-40@2x.png */; };
+		B03212DC25BC4DB6004989F1 /* Green-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212CB25BC4DB6004989F1 /* Green-AppIcon~iPhone-60@2x.png */; };
+		B03212DD25BC4DB6004989F1 /* Green-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212CC25BC4DB6004989F1 /* Green-AppIcon~iPad-29@1x.png */; };
+		B03212DE25BC4DB6004989F1 /* Green-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212CD25BC4DB6004989F1 /* Green-AppIcon~iPad-20@2x.png */; };
+		B03212DF25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212CE25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@3x.png */; };
+		B03212E025BC4DB6004989F1 /* Green-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212CF25BC4DB6004989F1 /* Green-AppIcon~iPhone-29@2x.png */; };
+		B03212E125BC4DB6004989F1 /* Green-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D025BC4DB6004989F1 /* Green-AppIcon~iPad-20@1x.png */; };
+		B03212E225BC4DB6004989F1 /* Green-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D125BC4DB6004989F1 /* Green-AppIcon~iPad-76@1x.png */; };
+		B03212E325BC4DB6004989F1 /* Green-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D225BC4DB6004989F1 /* Green-AppIcon~iPhone-40@3x.png */; };
+		B03212E425BC4DB6004989F1 /* Green-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D325BC4DB6004989F1 /* Green-AppIcon~iPhone-60@3x.png */; };
+		B03212E525BC4DB6004989F1 /* Green-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D425BC4DB6004989F1 /* Green-AppIcon~iPad-83.5@2x.png */; };
+		B03212E625BC4DB6004989F1 /* Green-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D525BC4DB6004989F1 /* Green-AppIcon~iPhone-29@3x.png */; };
+		B03212E725BC4DB6004989F1 /* Green-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D625BC4DB6004989F1 /* Green-AppIcon~iPad-29@2x.png */; };
+		B03212E825BC4DB6004989F1 /* Green-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D725BC4DB6004989F1 /* Green-AppIcon~iPad-40@2x.png */; };
+		B03212E925BC4DB6004989F1 /* Green-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D825BC4DB6004989F1 /* Green-AppIcon~iPad-40@1x.png */; };
+		B03212EA25BC4DB6004989F1 /* Green-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212D925BC4DB6004989F1 /* Green-AppIcon~iPad-76@2x.png */; };
+		B03212EB25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212DA25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@2x.png */; };
+		B032130125BC5222004989F1 /* Yellow-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F025BC5222004989F1 /* Yellow-AppIcon~iPad-40@2x.png */; };
+		B032130225BC5222004989F1 /* Yellow-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F125BC5222004989F1 /* Yellow-AppIcon~iPhone-60@2x.png */; };
+		B032130325BC5222004989F1 /* Yellow-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F225BC5222004989F1 /* Yellow-AppIcon~iPhone-20@2x.png */; };
+		B032130425BC5222004989F1 /* Yellow-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F325BC5222004989F1 /* Yellow-AppIcon~iPad-76@2x.png */; };
+		B032130525BC5222004989F1 /* Yellow-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F425BC5222004989F1 /* Yellow-AppIcon~iPad-20@2x.png */; };
+		B032130625BC5222004989F1 /* Yellow-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F525BC5222004989F1 /* Yellow-AppIcon~iPhone-20@3x.png */; };
+		B032130725BC5222004989F1 /* Yellow-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F625BC5222004989F1 /* Yellow-AppIcon~iPhone-29@3x.png */; };
+		B032130825BC5222004989F1 /* Yellow-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F725BC5222004989F1 /* Yellow-AppIcon~iPhone-40@2x.png */; };
+		B032130925BC5222004989F1 /* Yellow-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F825BC5222004989F1 /* Yellow-AppIcon~iPhone-60@3x.png */; };
+		B032130A25BC5222004989F1 /* Yellow-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212F925BC5222004989F1 /* Yellow-AppIcon~iPad-40@1x.png */; };
+		B032130B25BC5222004989F1 /* Yellow-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212FA25BC5222004989F1 /* Yellow-AppIcon~iPad-29@1x.png */; };
+		B032130C25BC5222004989F1 /* Yellow-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212FB25BC5222004989F1 /* Yellow-AppIcon~iPhone-29@2x.png */; };
+		B032130D25BC5222004989F1 /* Yellow-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212FC25BC5222004989F1 /* Yellow-AppIcon~iPad-83.5@2x.png */; };
+		B032130E25BC5222004989F1 /* Yellow-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212FD25BC5222004989F1 /* Yellow-AppIcon~iPad-20@1x.png */; };
+		B032130F25BC5222004989F1 /* Yellow-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212FE25BC5222004989F1 /* Yellow-AppIcon~iPad-76@1x.png */; };
+		B032131025BC5222004989F1 /* Yellow-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03212FF25BC5222004989F1 /* Yellow-AppIcon~iPad-29@2x.png */; };
+		B032131125BC5222004989F1 /* Yellow-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032130025BC5222004989F1 /* Yellow-AppIcon~iPhone-40@3x.png */; };
+		B032132725BC527F004989F1 /* Brown-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131625BC527F004989F1 /* Brown-AppIcon~iPhone-60@2x.png */; };
+		B032132825BC527F004989F1 /* Brown-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131725BC527F004989F1 /* Brown-AppIcon~iPad-29@1x.png */; };
+		B032132925BC527F004989F1 /* Brown-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131825BC527F004989F1 /* Brown-AppIcon~iPhone-40@2x.png */; };
+		B032132A25BC527F004989F1 /* Brown-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131925BC527F004989F1 /* Brown-AppIcon~iPad-76@2x.png */; };
+		B032132B25BC527F004989F1 /* Brown-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131A25BC527F004989F1 /* Brown-AppIcon~iPad-40@1x.png */; };
+		B032132C25BC527F004989F1 /* Brown-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131B25BC527F004989F1 /* Brown-AppIcon~iPad-76@1x.png */; };
+		B032132D25BC527F004989F1 /* Brown-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131C25BC527F004989F1 /* Brown-AppIcon~iPad-20@2x.png */; };
+		B032132E25BC527F004989F1 /* Brown-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131D25BC527F004989F1 /* Brown-AppIcon~iPad-20@1x.png */; };
+		B032132F25BC527F004989F1 /* Brown-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131E25BC527F004989F1 /* Brown-AppIcon~iPhone-20@2x.png */; };
+		B032133025BC527F004989F1 /* Brown-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032131F25BC527F004989F1 /* Brown-AppIcon~iPhone-40@3x.png */; };
+		B032133125BC527F004989F1 /* Brown-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132025BC527F004989F1 /* Brown-AppIcon~iPhone-60@3x.png */; };
+		B032133225BC527F004989F1 /* Brown-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132125BC527F004989F1 /* Brown-AppIcon~iPhone-29@3x.png */; };
+		B032133325BC527F004989F1 /* Brown-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132225BC527F004989F1 /* Brown-AppIcon~iPhone-29@2x.png */; };
+		B032133425BC527F004989F1 /* Brown-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132325BC527F004989F1 /* Brown-AppIcon~iPad-29@2x.png */; };
+		B032133525BC527F004989F1 /* Brown-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132425BC527F004989F1 /* Brown-AppIcon~iPad-83.5@2x.png */; };
+		B032133625BC527F004989F1 /* Brown-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132525BC527F004989F1 /* Brown-AppIcon~iPad-40@2x.png */; };
+		B032133725BC527F004989F1 /* Brown-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032132625BC527F004989F1 /* Brown-AppIcon~iPhone-20@3x.png */; };
+		B032134D25BC5316004989F1 /* Red-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032133C25BC5315004989F1 /* Red-AppIcon~iPad-29@2x.png */; };
+		B032134E25BC5316004989F1 /* Red-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032133D25BC5315004989F1 /* Red-AppIcon~iPad-83.5@2x.png */; };
+		B032134F25BC5316004989F1 /* Red-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032133E25BC5315004989F1 /* Red-AppIcon~iPhone-29@3x.png */; };
+		B032135025BC5316004989F1 /* Red-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032133F25BC5315004989F1 /* Red-AppIcon~iPad-20@2x.png */; };
+		B032135125BC5316004989F1 /* Red-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134025BC5315004989F1 /* Red-AppIcon~iPhone-29@2x.png */; };
+		B032135225BC5316004989F1 /* Red-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134125BC5315004989F1 /* Red-AppIcon~iPhone-20@3x.png */; };
+		B032135325BC5316004989F1 /* Red-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134225BC5315004989F1 /* Red-AppIcon~iPhone-60@2x.png */; };
+		B032135425BC5316004989F1 /* Red-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134325BC5315004989F1 /* Red-AppIcon~iPhone-60@3x.png */; };
+		B032135525BC5316004989F1 /* Red-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134425BC5315004989F1 /* Red-AppIcon~iPhone-20@2x.png */; };
+		B032135625BC5316004989F1 /* Red-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134525BC5315004989F1 /* Red-AppIcon~iPad-40@2x.png */; };
+		B032135725BC5316004989F1 /* Red-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134625BC5315004989F1 /* Red-AppIcon~iPad-76@1x.png */; };
+		B032135825BC5316004989F1 /* Red-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134725BC5315004989F1 /* Red-AppIcon~iPad-76@2x.png */; };
+		B032135925BC5316004989F1 /* Red-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134825BC5315004989F1 /* Red-AppIcon~iPad-40@1x.png */; };
+		B032135A25BC5316004989F1 /* Red-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134925BC5315004989F1 /* Red-AppIcon~iPad-29@1x.png */; };
+		B032135B25BC5316004989F1 /* Red-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134A25BC5315004989F1 /* Red-AppIcon~iPhone-40@2x.png */; };
+		B032135C25BC5316004989F1 /* Red-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134B25BC5316004989F1 /* Red-AppIcon~iPhone-40@3x.png */; };
+		B032135D25BC5316004989F1 /* Red-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032134C25BC5316004989F1 /* Red-AppIcon~iPad-20@1x.png */; };
+		B032137325BC536D004989F1 /* Purple-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136225BC536D004989F1 /* Purple-AppIcon~iPad-29@1x.png */; };
+		B032137425BC536D004989F1 /* Purple-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136325BC536D004989F1 /* Purple-AppIcon~iPad-40@1x.png */; };
+		B032137525BC536D004989F1 /* Purple-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136425BC536D004989F1 /* Purple-AppIcon~iPhone-20@2x.png */; };
+		B032137625BC536D004989F1 /* Purple-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136525BC536D004989F1 /* Purple-AppIcon~iPad-40@2x.png */; };
+		B032137725BC536D004989F1 /* Purple-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136625BC536D004989F1 /* Purple-AppIcon~iPad-29@2x.png */; };
+		B032137825BC536D004989F1 /* Purple-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136725BC536D004989F1 /* Purple-AppIcon~iPhone-60@2x.png */; };
+		B032137925BC536D004989F1 /* Purple-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136825BC536D004989F1 /* Purple-AppIcon~iPhone-40@3x.png */; };
+		B032137A25BC536D004989F1 /* Purple-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136925BC536D004989F1 /* Purple-AppIcon~iPad-20@2x.png */; };
+		B032137B25BC536D004989F1 /* Purple-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136A25BC536D004989F1 /* Purple-AppIcon~iPad-83.5@2x.png */; };
+		B032137C25BC536D004989F1 /* Purple-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136B25BC536D004989F1 /* Purple-AppIcon~iPhone-29@2x.png */; };
+		B032137D25BC536D004989F1 /* Purple-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136C25BC536D004989F1 /* Purple-AppIcon~iPad-76@1x.png */; };
+		B032137E25BC536D004989F1 /* Purple-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136D25BC536D004989F1 /* Purple-AppIcon~iPhone-20@3x.png */; };
+		B032137F25BC536D004989F1 /* Purple-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136E25BC536D004989F1 /* Purple-AppIcon~iPad-20@1x.png */; };
+		B032138025BC536D004989F1 /* Purple-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032136F25BC536D004989F1 /* Purple-AppIcon~iPhone-60@3x.png */; };
+		B032138125BC536D004989F1 /* Purple-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032137025BC536D004989F1 /* Purple-AppIcon~iPhone-40@2x.png */; };
+		B032138225BC536D004989F1 /* Purple-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032137125BC536D004989F1 /* Purple-AppIcon~iPhone-29@3x.png */; };
+		B032138325BC536D004989F1 /* Purple-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032137225BC536D004989F1 /* Purple-AppIcon~iPad-76@2x.png */; };
+		B03213BF25BC542B004989F1 /* Tan-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213AE25BC542B004989F1 /* Tan-AppIcon~iPad-83.5@2x.png */; };
+		B03213C025BC542B004989F1 /* Tan-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213AF25BC542B004989F1 /* Tan-AppIcon~iPad-76@1x.png */; };
+		B03213C125BC542B004989F1 /* Tan-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B025BC542B004989F1 /* Tan-AppIcon~iPhone-29@2x.png */; };
+		B03213C225BC542B004989F1 /* Tan-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B125BC542B004989F1 /* Tan-AppIcon~iPad-20@2x.png */; };
+		B03213C325BC542B004989F1 /* Tan-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B225BC542B004989F1 /* Tan-AppIcon~iPhone-40@3x.png */; };
+		B03213C425BC542B004989F1 /* Tan-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B325BC542B004989F1 /* Tan-AppIcon~iPhone-29@3x.png */; };
+		B03213C525BC542B004989F1 /* Tan-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B425BC542B004989F1 /* Tan-AppIcon~iPad-29@1x.png */; };
+		B03213C625BC542B004989F1 /* Tan-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B525BC542B004989F1 /* Tan-AppIcon~iPhone-20@3x.png */; };
+		B03213C725BC542B004989F1 /* Tan-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B625BC542B004989F1 /* Tan-AppIcon~iPhone-40@2x.png */; };
+		B03213C825BC542B004989F1 /* Tan-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B725BC542B004989F1 /* Tan-AppIcon~iPad-29@2x.png */; };
+		B03213C925BC542B004989F1 /* Tan-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B825BC542B004989F1 /* Tan-AppIcon~iPad-20@1x.png */; };
+		B03213CA25BC542B004989F1 /* Tan-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213B925BC542B004989F1 /* Tan-AppIcon~iPhone-20@2x.png */; };
+		B03213CB25BC542B004989F1 /* Tan-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213BA25BC542B004989F1 /* Tan-AppIcon~iPad-40@2x.png */; };
+		B03213CC25BC542B004989F1 /* Tan-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213BB25BC542B004989F1 /* Tan-AppIcon~iPhone-60@3x.png */; };
+		B03213CD25BC542B004989F1 /* Tan-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213BC25BC542B004989F1 /* Tan-AppIcon~iPad-76@2x.png */; };
+		B03213CE25BC542B004989F1 /* Tan-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213BD25BC542B004989F1 /* Tan-AppIcon~iPad-40@1x.png */; };
+		B03213CF25BC542B004989F1 /* Tan-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213BE25BC542B004989F1 /* Tan-AppIcon~iPhone-60@2x.png */; };
+		B03213E525BC54EA004989F1 /* White-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213D425BC54EA004989F1 /* White-AppIcon~iPad-40@1x.png */; };
+		B03213E625BC54EA004989F1 /* White-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213D525BC54EA004989F1 /* White-AppIcon~iPad-76@2x.png */; };
+		B03213E725BC54EA004989F1 /* White-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213D625BC54EA004989F1 /* White-AppIcon~iPad-29@1x.png */; };
+		B03213E825BC54EA004989F1 /* White-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213D725BC54EA004989F1 /* White-AppIcon~iPad-83.5@2x.png */; };
+		B03213E925BC54EA004989F1 /* White-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213D825BC54EA004989F1 /* White-AppIcon~iPad-40@2x.png */; };
+		B03213EA25BC54EA004989F1 /* White-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213D925BC54EA004989F1 /* White-AppIcon~iPad-29@2x.png */; };
+		B03213EB25BC54EA004989F1 /* White-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213DA25BC54EA004989F1 /* White-AppIcon~iPad-20@2x.png */; };
+		B03213EC25BC54EA004989F1 /* White-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213DB25BC54EA004989F1 /* White-AppIcon~iPhone-60@2x.png */; };
+		B03213ED25BC54EA004989F1 /* White-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213DC25BC54EA004989F1 /* White-AppIcon~iPhone-60@3x.png */; };
+		B03213EE25BC54EA004989F1 /* White-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213DD25BC54EA004989F1 /* White-AppIcon~iPhone-40@2x.png */; };
+		B03213EF25BC54EA004989F1 /* White-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213DE25BC54EA004989F1 /* White-AppIcon~iPad-20@1x.png */; };
+		B03213F025BC54EA004989F1 /* White-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213DF25BC54EA004989F1 /* White-AppIcon~iPhone-29@2x.png */; };
+		B03213F125BC54EA004989F1 /* White-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213E025BC54EA004989F1 /* White-AppIcon~iPhone-29@3x.png */; };
+		B03213F225BC54EA004989F1 /* White-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213E125BC54EA004989F1 /* White-AppIcon~iPad-76@1x.png */; };
+		B03213F325BC54EA004989F1 /* White-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213E225BC54EA004989F1 /* White-AppIcon~iPhone-20@3x.png */; };
+		B03213F425BC54EA004989F1 /* White-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213E325BC54EA004989F1 /* White-AppIcon~iPhone-40@3x.png */; };
+		B03213F525BC54EA004989F1 /* White-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03213E425BC54EA004989F1 /* White-AppIcon~iPhone-20@2x.png */; };
+		B032143825BC6E54004989F1 /* Pink-AppIcon~iPad-20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142725BC6E53004989F1 /* Pink-AppIcon~iPad-20@1x.png */; };
+		B032143925BC6E54004989F1 /* Pink-AppIcon~iPad-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142825BC6E53004989F1 /* Pink-AppIcon~iPad-20@2x.png */; };
+		B032143A25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142925BC6E53004989F1 /* Pink-AppIcon~iPhone-40@2x.png */; };
+		B032143B25BC6E54004989F1 /* Pink-AppIcon~iPhone-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142A25BC6E53004989F1 /* Pink-AppIcon~iPhone-60@3x.png */; };
+		B032143C25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142B25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@2x.png */; };
+		B032143D25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142C25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@3x.png */; };
+		B032143E25BC6E54004989F1 /* Pink-AppIcon~iPhone-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142D25BC6E54004989F1 /* Pink-AppIcon~iPhone-29@3x.png */; };
+		B032143F25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142E25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@3x.png */; };
+		B032144025BC6E54004989F1 /* Pink-AppIcon~iPad-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032142F25BC6E54004989F1 /* Pink-AppIcon~iPad-83.5@2x.png */; };
+		B032144125BC6E54004989F1 /* Pink-AppIcon~iPad-29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143025BC6E54004989F1 /* Pink-AppIcon~iPad-29@1x.png */; };
+		B032144225BC6E54004989F1 /* Pink-AppIcon~iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143125BC6E54004989F1 /* Pink-AppIcon~iPad-29@2x.png */; };
+		B032144325BC6E54004989F1 /* Pink-AppIcon~iPad-76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143225BC6E54004989F1 /* Pink-AppIcon~iPad-76@1x.png */; };
+		B032144425BC6E54004989F1 /* Pink-AppIcon~iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143325BC6E54004989F1 /* Pink-AppIcon~iPad-40@2x.png */; };
+		B032144525BC6E54004989F1 /* Pink-AppIcon~iPhone-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143425BC6E54004989F1 /* Pink-AppIcon~iPhone-60@2x.png */; };
+		B032144625BC6E54004989F1 /* Pink-AppIcon~iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143525BC6E54004989F1 /* Pink-AppIcon~iPad-76@2x.png */; };
+		B032144725BC6E54004989F1 /* Pink-AppIcon~iPhone-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143625BC6E54004989F1 /* Pink-AppIcon~iPhone-29@2x.png */; };
+		B032144825BC6E54004989F1 /* Pink-AppIcon~iPad-40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B032143725BC6E54004989F1 /* Pink-AppIcon~iPad-40@1x.png */; };
 		B045A47C2585A6680004FE93 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A47B2585A6680004FE93 /* HistoryVC.swift */; };
 		B045A4812585A6C50004FE93 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4802585A6C50004FE93 /* HistoryCell.swift */; };
 		B045A48A2585A8C00004FE93 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045A4892585A8C00004FE93 /* UIView+Constraints.swift */; };
 		B077E89E25B4DF9B00771D1F /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B077E89C25B4DF9B00771D1F /* History.xcdatamodeld */; };
+		B090B2D225BD0D0400539812 /* VerticalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B2D125BD0D0400539812 /* VerticalPanGestureRecognizer.swift */; };
 		B093BA7825B607050058629C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BA7725B607050058629C /* Settings.swift */; };
 		B093BD4125B7CD910058629C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4025B7CD910058629C /* Device.swift */; };
 		B093BD4825B7CD980058629C /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4525B7CD970058629C /* Version.swift */; };
 		B093BD4925B7CD980058629C /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4625B7CD970058629C /* Type.swift */; };
 		B093BD4A25B7CD980058629C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4725B7CD980058629C /* Size.swift */; };
 		B093BD4F25B7D1640058629C /* NSLayoutConstraint+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093BD4E25B7D1640058629C /* NSLayoutConstraint+.swift */; };
-		B093BD6925B7DD640058629C /* Icon-Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B093BD6725B7DD640058629C /* Icon-Black@2x.png */; };
-		B093BD6A25B7DD640058629C /* Icon-Black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B093BD6825B7DD640058629C /* Icon-Black@3x.png */; };
 		B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60771FFC63D5009219C9 /* Assests.xcassets */; };
 		B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */; };
 		B0DBC6A825702262000B8EEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DBC6A725702262000B8EEB /* Theme.swift */; };
@@ -65,18 +217,170 @@
 		B0229B491FFC2DED00A43F7C /* Nice_DiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_DiceUITests.swift; sourceTree = "<group>"; };
 		B0229B4B1FFC2DED00A43F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0229B571FFC309700A43F7C /* DiceRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRoll.swift; sourceTree = "<group>"; };
+		B032129E25BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B032129F25BC4AA8004989F1 /* Blue-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B03212A025BC4AA8004989F1 /* Blue-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B03212A125BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B03212A225BC4AA8004989F1 /* Blue-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B03212A325BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B03212A425BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B03212A525BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B03212A625BC4AA8004989F1 /* Blue-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B03212A725BC4AA8004989F1 /* Blue-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B03212A825BC4AA8004989F1 /* Blue-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B03212A925BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B03212AA25BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B03212AB25BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B03212AD25BC4AA8004989F1 /* Blue-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B03212AE25BC4AA8004989F1 /* Blue-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B03212AF25BC4AA8004989F1 /* Blue-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B03212CA25BC4DB6004989F1 /* Green-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B03212CB25BC4DB6004989F1 /* Green-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B03212CC25BC4DB6004989F1 /* Green-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B03212CD25BC4DB6004989F1 /* Green-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B03212CE25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B03212CF25BC4DB6004989F1 /* Green-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B03212D025BC4DB6004989F1 /* Green-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B03212D125BC4DB6004989F1 /* Green-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B03212D225BC4DB6004989F1 /* Green-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B03212D325BC4DB6004989F1 /* Green-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B03212D425BC4DB6004989F1 /* Green-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B03212D525BC4DB6004989F1 /* Green-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B03212D625BC4DB6004989F1 /* Green-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B03212D725BC4DB6004989F1 /* Green-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B03212D825BC4DB6004989F1 /* Green-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B03212D925BC4DB6004989F1 /* Green-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B03212DA25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B03212F025BC5222004989F1 /* Yellow-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B03212F125BC5222004989F1 /* Yellow-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B03212F225BC5222004989F1 /* Yellow-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B03212F325BC5222004989F1 /* Yellow-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B03212F425BC5222004989F1 /* Yellow-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B03212F525BC5222004989F1 /* Yellow-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B03212F625BC5222004989F1 /* Yellow-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B03212F725BC5222004989F1 /* Yellow-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B03212F825BC5222004989F1 /* Yellow-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B03212F925BC5222004989F1 /* Yellow-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B03212FA25BC5222004989F1 /* Yellow-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B03212FB25BC5222004989F1 /* Yellow-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B03212FC25BC5222004989F1 /* Yellow-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B03212FD25BC5222004989F1 /* Yellow-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B03212FE25BC5222004989F1 /* Yellow-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B03212FF25BC5222004989F1 /* Yellow-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B032130025BC5222004989F1 /* Yellow-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B032131625BC527F004989F1 /* Brown-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B032131725BC527F004989F1 /* Brown-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B032131825BC527F004989F1 /* Brown-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B032131925BC527F004989F1 /* Brown-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B032131A25BC527F004989F1 /* Brown-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B032131B25BC527F004989F1 /* Brown-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B032131C25BC527F004989F1 /* Brown-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B032131D25BC527F004989F1 /* Brown-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B032131E25BC527F004989F1 /* Brown-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B032131F25BC527F004989F1 /* Brown-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B032132025BC527F004989F1 /* Brown-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B032132125BC527F004989F1 /* Brown-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B032132225BC527F004989F1 /* Brown-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B032132325BC527F004989F1 /* Brown-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B032132425BC527F004989F1 /* Brown-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B032132525BC527F004989F1 /* Brown-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B032132625BC527F004989F1 /* Brown-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brown-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B032133C25BC5315004989F1 /* Red-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B032133D25BC5315004989F1 /* Red-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B032133E25BC5315004989F1 /* Red-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B032133F25BC5315004989F1 /* Red-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B032134025BC5315004989F1 /* Red-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B032134125BC5315004989F1 /* Red-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B032134225BC5315004989F1 /* Red-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B032134325BC5315004989F1 /* Red-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B032134425BC5315004989F1 /* Red-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B032134525BC5315004989F1 /* Red-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B032134625BC5315004989F1 /* Red-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B032134725BC5315004989F1 /* Red-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B032134825BC5315004989F1 /* Red-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B032134925BC5315004989F1 /* Red-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B032134A25BC5315004989F1 /* Red-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B032134B25BC5316004989F1 /* Red-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B032134C25BC5316004989F1 /* Red-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B032136225BC536D004989F1 /* Purple-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B032136325BC536D004989F1 /* Purple-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B032136425BC536D004989F1 /* Purple-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B032136525BC536D004989F1 /* Purple-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B032136625BC536D004989F1 /* Purple-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B032136725BC536D004989F1 /* Purple-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B032136825BC536D004989F1 /* Purple-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B032136925BC536D004989F1 /* Purple-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B032136A25BC536D004989F1 /* Purple-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B032136B25BC536D004989F1 /* Purple-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B032136C25BC536D004989F1 /* Purple-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B032136D25BC536D004989F1 /* Purple-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B032136E25BC536D004989F1 /* Purple-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B032136F25BC536D004989F1 /* Purple-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B032137025BC536D004989F1 /* Purple-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B032137125BC536D004989F1 /* Purple-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B032137225BC536D004989F1 /* Purple-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B03213AE25BC542B004989F1 /* Tan-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B03213AF25BC542B004989F1 /* Tan-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B03213B025BC542B004989F1 /* Tan-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B03213B125BC542B004989F1 /* Tan-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B03213B225BC542B004989F1 /* Tan-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B03213B325BC542B004989F1 /* Tan-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B03213B425BC542B004989F1 /* Tan-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B03213B525BC542B004989F1 /* Tan-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B03213B625BC542B004989F1 /* Tan-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B03213B725BC542B004989F1 /* Tan-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B03213B825BC542B004989F1 /* Tan-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B03213B925BC542B004989F1 /* Tan-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B03213BA25BC542B004989F1 /* Tan-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B03213BB25BC542B004989F1 /* Tan-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B03213BC25BC542B004989F1 /* Tan-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B03213BD25BC542B004989F1 /* Tan-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B03213BE25BC542B004989F1 /* Tan-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tan-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B03213D425BC54EA004989F1 /* White-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
+		B03213D525BC54EA004989F1 /* White-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B03213D625BC54EA004989F1 /* White-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B03213D725BC54EA004989F1 /* White-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B03213D825BC54EA004989F1 /* White-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B03213D925BC54EA004989F1 /* White-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B03213DA25BC54EA004989F1 /* White-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B03213DB25BC54EA004989F1 /* White-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B03213DC25BC54EA004989F1 /* White-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B03213DD25BC54EA004989F1 /* White-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B03213DE25BC54EA004989F1 /* White-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B03213DF25BC54EA004989F1 /* White-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B03213E025BC54EA004989F1 /* White-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B03213E125BC54EA004989F1 /* White-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B03213E225BC54EA004989F1 /* White-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B03213E325BC54EA004989F1 /* White-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B03213E425BC54EA004989F1 /* White-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B032142725BC6E53004989F1 /* Pink-AppIcon~iPad-20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-20@1x.png"; sourceTree = "<group>"; };
+		B032142825BC6E53004989F1 /* Pink-AppIcon~iPad-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-20@2x.png"; sourceTree = "<group>"; };
+		B032142925BC6E53004989F1 /* Pink-AppIcon~iPhone-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-40@2x.png"; sourceTree = "<group>"; };
+		B032142A25BC6E53004989F1 /* Pink-AppIcon~iPhone-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-60@3x.png"; sourceTree = "<group>"; };
+		B032142B25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-20@2x.png"; sourceTree = "<group>"; };
+		B032142C25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-20@3x.png"; sourceTree = "<group>"; };
+		B032142D25BC6E54004989F1 /* Pink-AppIcon~iPhone-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-29@3x.png"; sourceTree = "<group>"; };
+		B032142E25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-40@3x.png"; sourceTree = "<group>"; };
+		B032142F25BC6E54004989F1 /* Pink-AppIcon~iPad-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-83.5@2x.png"; sourceTree = "<group>"; };
+		B032143025BC6E54004989F1 /* Pink-AppIcon~iPad-29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-29@1x.png"; sourceTree = "<group>"; };
+		B032143125BC6E54004989F1 /* Pink-AppIcon~iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-29@2x.png"; sourceTree = "<group>"; };
+		B032143225BC6E54004989F1 /* Pink-AppIcon~iPad-76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-76@1x.png"; sourceTree = "<group>"; };
+		B032143325BC6E54004989F1 /* Pink-AppIcon~iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-40@2x.png"; sourceTree = "<group>"; };
+		B032143425BC6E54004989F1 /* Pink-AppIcon~iPhone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-60@2x.png"; sourceTree = "<group>"; };
+		B032143525BC6E54004989F1 /* Pink-AppIcon~iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-76@2x.png"; sourceTree = "<group>"; };
+		B032143625BC6E54004989F1 /* Pink-AppIcon~iPhone-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPhone-29@2x.png"; sourceTree = "<group>"; };
+		B032143725BC6E54004989F1 /* Pink-AppIcon~iPad-40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink-AppIcon~iPad-40@1x.png"; sourceTree = "<group>"; };
 		B045A47B2585A6680004FE93 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		B045A4802585A6C50004FE93 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		B045A4892585A8C00004FE93 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B077E89D25B4DF9B00771D1F /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
+		B090B2D125BD0D0400539812 /* VerticalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		B093BA7725B607050058629C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B093BD4025B7CD910058629C /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B093BD4525B7CD970058629C /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		B093BD4625B7CD970058629C /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		B093BD4725B7CD980058629C /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		B093BD4E25B7D1640058629C /* NSLayoutConstraint+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+.swift"; sourceTree = "<group>"; };
-		B093BD6725B7DD640058629C /* Icon-Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Black@2x.png"; sourceTree = "<group>"; };
-		B093BD6825B7DD640058629C /* Icon-Black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Black@3x.png"; sourceTree = "<group>"; };
 		B0AD60771FFC63D5009219C9 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DBC69325700CF8000B8EEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +456,7 @@
 				B0AD60791FFC8763009219C9 /* LaunchScreen.storyboard */,
 				B0229B2D1FFC2DED00A43F7C /* Main.storyboard */,
 				B0AD60771FFC63D5009219C9 /* Assests.xcassets */,
+				B090B2D125BD0D0400539812 /* VerticalPanGestureRecognizer.swift */,
 			);
 			path = NiceDice;
 			sourceTree = "<group>";
@@ -177,10 +482,226 @@
 		B0229B591FFC590B00A43F7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B093BD5325B7DB4E0058629C /* Icons */,
+				B093BD5325B7DB4E0058629C /* Alternate Icons */,
 				B0DBC6BA25703FB9000B8EEB /* Acumin  */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B03212C525BC4B26004989F1 /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				B03212AE25BC4AA8004989F1 /* Blue-AppIcon~iPad-20@1x.png */,
+				B03212A625BC4AA8004989F1 /* Blue-AppIcon~iPad-20@2x.png */,
+				B03212A825BC4AA8004989F1 /* Blue-AppIcon~iPad-29@1x.png */,
+				B03212A725BC4AA8004989F1 /* Blue-AppIcon~iPad-29@2x.png */,
+				B03212AD25BC4AA8004989F1 /* Blue-AppIcon~iPad-40@1x.png */,
+				B03212A025BC4AA8004989F1 /* Blue-AppIcon~iPad-40@2x.png */,
+				B03212A225BC4AA8004989F1 /* Blue-AppIcon~iPad-76@1x.png */,
+				B03212AF25BC4AA8004989F1 /* Blue-AppIcon~iPad-76@2x.png */,
+				B032129F25BC4AA8004989F1 /* Blue-AppIcon~iPad-83.5@2x.png */,
+				B03212A325BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@2x.png */,
+				B03212AB25BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@3x.png */,
+				B032129E25BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@2x.png */,
+				B03212A925BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@3x.png */,
+				B03212A125BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@2x.png */,
+				B03212A425BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@3x.png */,
+				B03212AA25BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@2x.png */,
+				B03212A525BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Blue;
+			sourceTree = "<group>";
+		};
+		B03212C925BC4DAC004989F1 /* Green */ = {
+			isa = PBXGroup;
+			children = (
+				B03212D025BC4DB6004989F1 /* Green-AppIcon~iPad-20@1x.png */,
+				B03212CD25BC4DB6004989F1 /* Green-AppIcon~iPad-20@2x.png */,
+				B03212CC25BC4DB6004989F1 /* Green-AppIcon~iPad-29@1x.png */,
+				B03212D625BC4DB6004989F1 /* Green-AppIcon~iPad-29@2x.png */,
+				B03212D825BC4DB6004989F1 /* Green-AppIcon~iPad-40@1x.png */,
+				B03212D725BC4DB6004989F1 /* Green-AppIcon~iPad-40@2x.png */,
+				B03212D125BC4DB6004989F1 /* Green-AppIcon~iPad-76@1x.png */,
+				B03212D925BC4DB6004989F1 /* Green-AppIcon~iPad-76@2x.png */,
+				B03212D425BC4DB6004989F1 /* Green-AppIcon~iPad-83.5@2x.png */,
+				B03212DA25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@2x.png */,
+				B03212CE25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@3x.png */,
+				B03212CF25BC4DB6004989F1 /* Green-AppIcon~iPhone-29@2x.png */,
+				B03212D525BC4DB6004989F1 /* Green-AppIcon~iPhone-29@3x.png */,
+				B03212CA25BC4DB6004989F1 /* Green-AppIcon~iPhone-40@2x.png */,
+				B03212D225BC4DB6004989F1 /* Green-AppIcon~iPhone-40@3x.png */,
+				B03212CB25BC4DB6004989F1 /* Green-AppIcon~iPhone-60@2x.png */,
+				B03212D325BC4DB6004989F1 /* Green-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Green;
+			sourceTree = "<group>";
+		};
+		B03212EF25BC51FF004989F1 /* Yellow */ = {
+			isa = PBXGroup;
+			children = (
+				B03212FD25BC5222004989F1 /* Yellow-AppIcon~iPad-20@1x.png */,
+				B03212F425BC5222004989F1 /* Yellow-AppIcon~iPad-20@2x.png */,
+				B03212FA25BC5222004989F1 /* Yellow-AppIcon~iPad-29@1x.png */,
+				B03212FF25BC5222004989F1 /* Yellow-AppIcon~iPad-29@2x.png */,
+				B03212F925BC5222004989F1 /* Yellow-AppIcon~iPad-40@1x.png */,
+				B03212F025BC5222004989F1 /* Yellow-AppIcon~iPad-40@2x.png */,
+				B03212FE25BC5222004989F1 /* Yellow-AppIcon~iPad-76@1x.png */,
+				B03212F325BC5222004989F1 /* Yellow-AppIcon~iPad-76@2x.png */,
+				B03212FC25BC5222004989F1 /* Yellow-AppIcon~iPad-83.5@2x.png */,
+				B03212F225BC5222004989F1 /* Yellow-AppIcon~iPhone-20@2x.png */,
+				B03212F525BC5222004989F1 /* Yellow-AppIcon~iPhone-20@3x.png */,
+				B03212FB25BC5222004989F1 /* Yellow-AppIcon~iPhone-29@2x.png */,
+				B03212F625BC5222004989F1 /* Yellow-AppIcon~iPhone-29@3x.png */,
+				B03212F725BC5222004989F1 /* Yellow-AppIcon~iPhone-40@2x.png */,
+				B032130025BC5222004989F1 /* Yellow-AppIcon~iPhone-40@3x.png */,
+				B03212F125BC5222004989F1 /* Yellow-AppIcon~iPhone-60@2x.png */,
+				B03212F825BC5222004989F1 /* Yellow-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Yellow;
+			sourceTree = "<group>";
+		};
+		B032131525BC5275004989F1 /* Brown */ = {
+			isa = PBXGroup;
+			children = (
+				B032131D25BC527F004989F1 /* Brown-AppIcon~iPad-20@1x.png */,
+				B032131C25BC527F004989F1 /* Brown-AppIcon~iPad-20@2x.png */,
+				B032131725BC527F004989F1 /* Brown-AppIcon~iPad-29@1x.png */,
+				B032132325BC527F004989F1 /* Brown-AppIcon~iPad-29@2x.png */,
+				B032131A25BC527F004989F1 /* Brown-AppIcon~iPad-40@1x.png */,
+				B032132525BC527F004989F1 /* Brown-AppIcon~iPad-40@2x.png */,
+				B032131B25BC527F004989F1 /* Brown-AppIcon~iPad-76@1x.png */,
+				B032131925BC527F004989F1 /* Brown-AppIcon~iPad-76@2x.png */,
+				B032132425BC527F004989F1 /* Brown-AppIcon~iPad-83.5@2x.png */,
+				B032131E25BC527F004989F1 /* Brown-AppIcon~iPhone-20@2x.png */,
+				B032132625BC527F004989F1 /* Brown-AppIcon~iPhone-20@3x.png */,
+				B032132225BC527F004989F1 /* Brown-AppIcon~iPhone-29@2x.png */,
+				B032132125BC527F004989F1 /* Brown-AppIcon~iPhone-29@3x.png */,
+				B032131825BC527F004989F1 /* Brown-AppIcon~iPhone-40@2x.png */,
+				B032131F25BC527F004989F1 /* Brown-AppIcon~iPhone-40@3x.png */,
+				B032131625BC527F004989F1 /* Brown-AppIcon~iPhone-60@2x.png */,
+				B032132025BC527F004989F1 /* Brown-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Brown;
+			sourceTree = "<group>";
+		};
+		B032133B25BC5301004989F1 /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				B032134C25BC5316004989F1 /* Red-AppIcon~iPad-20@1x.png */,
+				B032133F25BC5315004989F1 /* Red-AppIcon~iPad-20@2x.png */,
+				B032134925BC5315004989F1 /* Red-AppIcon~iPad-29@1x.png */,
+				B032133C25BC5315004989F1 /* Red-AppIcon~iPad-29@2x.png */,
+				B032134825BC5315004989F1 /* Red-AppIcon~iPad-40@1x.png */,
+				B032134525BC5315004989F1 /* Red-AppIcon~iPad-40@2x.png */,
+				B032134625BC5315004989F1 /* Red-AppIcon~iPad-76@1x.png */,
+				B032134725BC5315004989F1 /* Red-AppIcon~iPad-76@2x.png */,
+				B032133D25BC5315004989F1 /* Red-AppIcon~iPad-83.5@2x.png */,
+				B032134425BC5315004989F1 /* Red-AppIcon~iPhone-20@2x.png */,
+				B032134125BC5315004989F1 /* Red-AppIcon~iPhone-20@3x.png */,
+				B032134025BC5315004989F1 /* Red-AppIcon~iPhone-29@2x.png */,
+				B032133E25BC5315004989F1 /* Red-AppIcon~iPhone-29@3x.png */,
+				B032134A25BC5315004989F1 /* Red-AppIcon~iPhone-40@2x.png */,
+				B032134B25BC5316004989F1 /* Red-AppIcon~iPhone-40@3x.png */,
+				B032134225BC5315004989F1 /* Red-AppIcon~iPhone-60@2x.png */,
+				B032134325BC5315004989F1 /* Red-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Red;
+			sourceTree = "<group>";
+		};
+		B032136125BC5363004989F1 /* Purple */ = {
+			isa = PBXGroup;
+			children = (
+				B032136E25BC536D004989F1 /* Purple-AppIcon~iPad-20@1x.png */,
+				B032136925BC536D004989F1 /* Purple-AppIcon~iPad-20@2x.png */,
+				B032136225BC536D004989F1 /* Purple-AppIcon~iPad-29@1x.png */,
+				B032136625BC536D004989F1 /* Purple-AppIcon~iPad-29@2x.png */,
+				B032136325BC536D004989F1 /* Purple-AppIcon~iPad-40@1x.png */,
+				B032136525BC536D004989F1 /* Purple-AppIcon~iPad-40@2x.png */,
+				B032136C25BC536D004989F1 /* Purple-AppIcon~iPad-76@1x.png */,
+				B032137225BC536D004989F1 /* Purple-AppIcon~iPad-76@2x.png */,
+				B032136A25BC536D004989F1 /* Purple-AppIcon~iPad-83.5@2x.png */,
+				B032136425BC536D004989F1 /* Purple-AppIcon~iPhone-20@2x.png */,
+				B032136D25BC536D004989F1 /* Purple-AppIcon~iPhone-20@3x.png */,
+				B032136B25BC536D004989F1 /* Purple-AppIcon~iPhone-29@2x.png */,
+				B032137125BC536D004989F1 /* Purple-AppIcon~iPhone-29@3x.png */,
+				B032137025BC536D004989F1 /* Purple-AppIcon~iPhone-40@2x.png */,
+				B032136825BC536D004989F1 /* Purple-AppIcon~iPhone-40@3x.png */,
+				B032136725BC536D004989F1 /* Purple-AppIcon~iPhone-60@2x.png */,
+				B032136F25BC536D004989F1 /* Purple-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Purple;
+			sourceTree = "<group>";
+		};
+		B032138725BC53CC004989F1 /* Pink */ = {
+			isa = PBXGroup;
+			children = (
+				B032142725BC6E53004989F1 /* Pink-AppIcon~iPad-20@1x.png */,
+				B032142825BC6E53004989F1 /* Pink-AppIcon~iPad-20@2x.png */,
+				B032143025BC6E54004989F1 /* Pink-AppIcon~iPad-29@1x.png */,
+				B032143125BC6E54004989F1 /* Pink-AppIcon~iPad-29@2x.png */,
+				B032143725BC6E54004989F1 /* Pink-AppIcon~iPad-40@1x.png */,
+				B032143325BC6E54004989F1 /* Pink-AppIcon~iPad-40@2x.png */,
+				B032143225BC6E54004989F1 /* Pink-AppIcon~iPad-76@1x.png */,
+				B032143525BC6E54004989F1 /* Pink-AppIcon~iPad-76@2x.png */,
+				B032142F25BC6E54004989F1 /* Pink-AppIcon~iPad-83.5@2x.png */,
+				B032142B25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@2x.png */,
+				B032142C25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@3x.png */,
+				B032143625BC6E54004989F1 /* Pink-AppIcon~iPhone-29@2x.png */,
+				B032142D25BC6E54004989F1 /* Pink-AppIcon~iPhone-29@3x.png */,
+				B032142925BC6E53004989F1 /* Pink-AppIcon~iPhone-40@2x.png */,
+				B032142E25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@3x.png */,
+				B032143425BC6E54004989F1 /* Pink-AppIcon~iPhone-60@2x.png */,
+				B032142A25BC6E53004989F1 /* Pink-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Pink;
+			sourceTree = "<group>";
+		};
+		B03213AD25BC5422004989F1 /* Tan */ = {
+			isa = PBXGroup;
+			children = (
+				B03213B825BC542B004989F1 /* Tan-AppIcon~iPad-20@1x.png */,
+				B03213B125BC542B004989F1 /* Tan-AppIcon~iPad-20@2x.png */,
+				B03213B425BC542B004989F1 /* Tan-AppIcon~iPad-29@1x.png */,
+				B03213B725BC542B004989F1 /* Tan-AppIcon~iPad-29@2x.png */,
+				B03213BD25BC542B004989F1 /* Tan-AppIcon~iPad-40@1x.png */,
+				B03213BA25BC542B004989F1 /* Tan-AppIcon~iPad-40@2x.png */,
+				B03213AF25BC542B004989F1 /* Tan-AppIcon~iPad-76@1x.png */,
+				B03213BC25BC542B004989F1 /* Tan-AppIcon~iPad-76@2x.png */,
+				B03213AE25BC542B004989F1 /* Tan-AppIcon~iPad-83.5@2x.png */,
+				B03213B925BC542B004989F1 /* Tan-AppIcon~iPhone-20@2x.png */,
+				B03213B525BC542B004989F1 /* Tan-AppIcon~iPhone-20@3x.png */,
+				B03213B025BC542B004989F1 /* Tan-AppIcon~iPhone-29@2x.png */,
+				B03213B325BC542B004989F1 /* Tan-AppIcon~iPhone-29@3x.png */,
+				B03213B625BC542B004989F1 /* Tan-AppIcon~iPhone-40@2x.png */,
+				B03213B225BC542B004989F1 /* Tan-AppIcon~iPhone-40@3x.png */,
+				B03213BE25BC542B004989F1 /* Tan-AppIcon~iPhone-60@2x.png */,
+				B03213BB25BC542B004989F1 /* Tan-AppIcon~iPhone-60@3x.png */,
+			);
+			path = Tan;
+			sourceTree = "<group>";
+		};
+		B03213D325BC54D8004989F1 /* White */ = {
+			isa = PBXGroup;
+			children = (
+				B03213DE25BC54EA004989F1 /* White-AppIcon~iPad-20@1x.png */,
+				B03213DA25BC54EA004989F1 /* White-AppIcon~iPad-20@2x.png */,
+				B03213D625BC54EA004989F1 /* White-AppIcon~iPad-29@1x.png */,
+				B03213D925BC54EA004989F1 /* White-AppIcon~iPad-29@2x.png */,
+				B03213D425BC54EA004989F1 /* White-AppIcon~iPad-40@1x.png */,
+				B03213D825BC54EA004989F1 /* White-AppIcon~iPad-40@2x.png */,
+				B03213E125BC54EA004989F1 /* White-AppIcon~iPad-76@1x.png */,
+				B03213D525BC54EA004989F1 /* White-AppIcon~iPad-76@2x.png */,
+				B03213D725BC54EA004989F1 /* White-AppIcon~iPad-83.5@2x.png */,
+				B03213E425BC54EA004989F1 /* White-AppIcon~iPhone-20@2x.png */,
+				B03213E225BC54EA004989F1 /* White-AppIcon~iPhone-20@3x.png */,
+				B03213DF25BC54EA004989F1 /* White-AppIcon~iPhone-29@2x.png */,
+				B03213E025BC54EA004989F1 /* White-AppIcon~iPhone-29@3x.png */,
+				B03213DD25BC54EA004989F1 /* White-AppIcon~iPhone-40@2x.png */,
+				B03213E325BC54EA004989F1 /* White-AppIcon~iPhone-40@3x.png */,
+				B03213DB25BC54EA004989F1 /* White-AppIcon~iPhone-60@2x.png */,
+				B03213DC25BC54EA004989F1 /* White-AppIcon~iPhone-60@3x.png */,
+			);
+			path = White;
 			sourceTree = "<group>";
 		};
 		B045A47A2585A6520004FE93 /* History */ = {
@@ -214,13 +735,20 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
-		B093BD5325B7DB4E0058629C /* Icons */ = {
+		B093BD5325B7DB4E0058629C /* Alternate Icons */ = {
 			isa = PBXGroup;
 			children = (
-				B093BD6725B7DD640058629C /* Icon-Black@2x.png */,
-				B093BD6825B7DD640058629C /* Icon-Black@3x.png */,
+				B03212C525BC4B26004989F1 /* Blue */,
+				B03212C925BC4DAC004989F1 /* Green */,
+				B03212EF25BC51FF004989F1 /* Yellow */,
+				B032131525BC5275004989F1 /* Brown */,
+				B032136125BC5363004989F1 /* Purple */,
+				B032138725BC53CC004989F1 /* Pink */,
+				B032133B25BC5301004989F1 /* Red */,
+				B03213AD25BC5422004989F1 /* Tan */,
+				B03213D325BC54D8004989F1 /* White */,
 			);
-			path = Icons;
+			path = "Alternate Icons";
 			sourceTree = "<group>";
 		};
 		B0DBC6BA25703FB9000B8EEB /* Acumin  */ = {
@@ -343,14 +871,165 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03212DF25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@3x.png in Resources */,
+				B032130825BC5222004989F1 /* Yellow-AppIcon~iPhone-40@2x.png in Resources */,
+				B032144725BC6E54004989F1 /* Pink-AppIcon~iPhone-29@2x.png in Resources */,
+				B03213CF25BC542B004989F1 /* Tan-AppIcon~iPhone-60@2x.png in Resources */,
+				B032130D25BC5222004989F1 /* Yellow-AppIcon~iPad-83.5@2x.png in Resources */,
+				B03213F325BC54EA004989F1 /* White-AppIcon~iPhone-20@3x.png in Resources */,
+				B032137825BC536D004989F1 /* Purple-AppIcon~iPhone-60@2x.png in Resources */,
+				B032133425BC527F004989F1 /* Brown-AppIcon~iPad-29@2x.png in Resources */,
+				B03213CD25BC542B004989F1 /* Tan-AppIcon~iPad-76@2x.png in Resources */,
+				B03212E725BC4DB6004989F1 /* Green-AppIcon~iPad-29@2x.png in Resources */,
+				B03213C625BC542B004989F1 /* Tan-AppIcon~iPhone-20@3x.png in Resources */,
+				B032132725BC527F004989F1 /* Brown-AppIcon~iPhone-60@2x.png in Resources */,
+				B03212E225BC4DB6004989F1 /* Green-AppIcon~iPad-76@1x.png in Resources */,
+				B03212EB25BC4DB6004989F1 /* Green-AppIcon~iPhone-20@2x.png in Resources */,
+				B03212E525BC4DB6004989F1 /* Green-AppIcon~iPad-83.5@2x.png in Resources */,
+				B032144325BC6E54004989F1 /* Pink-AppIcon~iPad-76@1x.png in Resources */,
+				B03212DD25BC4DB6004989F1 /* Green-AppIcon~iPad-29@1x.png in Resources */,
+				B032131125BC5222004989F1 /* Yellow-AppIcon~iPhone-40@3x.png in Resources */,
+				B032137D25BC536D004989F1 /* Purple-AppIcon~iPad-76@1x.png in Resources */,
+				B032137525BC536D004989F1 /* Purple-AppIcon~iPhone-20@2x.png in Resources */,
+				B032132E25BC527F004989F1 /* Brown-AppIcon~iPad-20@1x.png in Resources */,
+				B03213EB25BC54EA004989F1 /* White-AppIcon~iPad-20@2x.png in Resources */,
+				B03212C025BC4AA8004989F1 /* Blue-AppIcon~iPad-20@1x.png in Resources */,
+				B032137625BC536D004989F1 /* Purple-AppIcon~iPad-40@2x.png in Resources */,
+				B03212B125BC4AA8004989F1 /* Blue-AppIcon~iPad-83.5@2x.png in Resources */,
+				B032135425BC5316004989F1 /* Red-AppIcon~iPhone-60@3x.png in Resources */,
+				B032143F25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@3x.png in Resources */,
+				B03212B225BC4AA8004989F1 /* Blue-AppIcon~iPad-40@2x.png in Resources */,
+				B03212E125BC4DB6004989F1 /* Green-AppIcon~iPad-20@1x.png in Resources */,
+				B032130525BC5222004989F1 /* Yellow-AppIcon~iPad-20@2x.png in Resources */,
+				B032144125BC6E54004989F1 /* Pink-AppIcon~iPad-29@1x.png in Resources */,
+				B032133725BC527F004989F1 /* Brown-AppIcon~iPhone-20@3x.png in Resources */,
+				B032143925BC6E54004989F1 /* Pink-AppIcon~iPad-20@2x.png in Resources */,
+				B032133625BC527F004989F1 /* Brown-AppIcon~iPad-40@2x.png in Resources */,
+				B032137A25BC536D004989F1 /* Purple-AppIcon~iPad-20@2x.png in Resources */,
+				B032143825BC6E54004989F1 /* Pink-AppIcon~iPad-20@1x.png in Resources */,
+				B032130C25BC5222004989F1 /* Yellow-AppIcon~iPhone-29@2x.png in Resources */,
+				B03212BD25BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@3x.png in Resources */,
+				B032137B25BC536D004989F1 /* Purple-AppIcon~iPad-83.5@2x.png in Resources */,
+				B032143A25BC6E54004989F1 /* Pink-AppIcon~iPhone-40@2x.png in Resources */,
+				B032143C25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@2x.png in Resources */,
+				B032144225BC6E54004989F1 /* Pink-AppIcon~iPad-29@2x.png in Resources */,
+				B03212B825BC4AA8004989F1 /* Blue-AppIcon~iPad-20@2x.png in Resources */,
 				B0AD60781FFC63D5009219C9 /* Assests.xcassets in Resources */,
+				B032132C25BC527F004989F1 /* Brown-AppIcon~iPad-76@1x.png in Resources */,
+				B03212E825BC4DB6004989F1 /* Green-AppIcon~iPad-40@2x.png in Resources */,
+				B032133025BC527F004989F1 /* Brown-AppIcon~iPhone-40@3x.png in Resources */,
+				B032137925BC536D004989F1 /* Purple-AppIcon~iPhone-40@3x.png in Resources */,
+				B032132925BC527F004989F1 /* Brown-AppIcon~iPhone-40@2x.png in Resources */,
+				B03213C425BC542B004989F1 /* Tan-AppIcon~iPhone-29@3x.png in Resources */,
+				B032133225BC527F004989F1 /* Brown-AppIcon~iPhone-29@3x.png in Resources */,
+				B032135325BC5316004989F1 /* Red-AppIcon~iPhone-60@2x.png in Resources */,
+				B032135625BC5316004989F1 /* Red-AppIcon~iPad-40@2x.png in Resources */,
+				B032137425BC536D004989F1 /* Purple-AppIcon~iPad-40@1x.png in Resources */,
+				B032135225BC5316004989F1 /* Red-AppIcon~iPhone-20@3x.png in Resources */,
+				B032137325BC536D004989F1 /* Purple-AppIcon~iPad-29@1x.png in Resources */,
+				B032144525BC6E54004989F1 /* Pink-AppIcon~iPhone-60@2x.png in Resources */,
+				B032133325BC527F004989F1 /* Brown-AppIcon~iPhone-29@2x.png in Resources */,
+				B03213EF25BC54EA004989F1 /* White-AppIcon~iPad-20@1x.png in Resources */,
+				B032138025BC536D004989F1 /* Purple-AppIcon~iPhone-60@3x.png in Resources */,
+				B03213E525BC54EA004989F1 /* White-AppIcon~iPad-40@1x.png in Resources */,
+				B03213CB25BC542B004989F1 /* Tan-AppIcon~iPad-40@2x.png in Resources */,
+				B032144425BC6E54004989F1 /* Pink-AppIcon~iPad-40@2x.png in Resources */,
+				B032134F25BC5316004989F1 /* Red-AppIcon~iPhone-29@3x.png in Resources */,
+				B03212DC25BC4DB6004989F1 /* Green-AppIcon~iPhone-60@2x.png in Resources */,
+				B032132F25BC527F004989F1 /* Brown-AppIcon~iPhone-20@2x.png in Resources */,
+				B032130225BC5222004989F1 /* Yellow-AppIcon~iPhone-60@2x.png in Resources */,
+				B032130725BC5222004989F1 /* Yellow-AppIcon~iPhone-29@3x.png in Resources */,
+				B032144825BC6E54004989F1 /* Pink-AppIcon~iPad-40@1x.png in Resources */,
+				B03213CA25BC542B004989F1 /* Tan-AppIcon~iPhone-20@2x.png in Resources */,
+				B03212DE25BC4DB6004989F1 /* Green-AppIcon~iPad-20@2x.png in Resources */,
+				B032132825BC527F004989F1 /* Brown-AppIcon~iPad-29@1x.png in Resources */,
+				B032133525BC527F004989F1 /* Brown-AppIcon~iPad-83.5@2x.png in Resources */,
+				B032138325BC536D004989F1 /* Purple-AppIcon~iPad-76@2x.png in Resources */,
+				B03213C925BC542B004989F1 /* Tan-AppIcon~iPad-20@1x.png in Resources */,
+				B03213E925BC54EA004989F1 /* White-AppIcon~iPad-40@2x.png in Resources */,
+				B03212E425BC4DB6004989F1 /* Green-AppIcon~iPhone-60@3x.png in Resources */,
+				B032130A25BC5222004989F1 /* Yellow-AppIcon~iPad-40@1x.png in Resources */,
+				B03212B425BC4AA8004989F1 /* Blue-AppIcon~iPad-76@1x.png in Resources */,
+				B032130B25BC5222004989F1 /* Yellow-AppIcon~iPad-29@1x.png in Resources */,
+				B03212B325BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@2x.png in Resources */,
+				B032130925BC5222004989F1 /* Yellow-AppIcon~iPhone-60@3x.png in Resources */,
+				B032135825BC5316004989F1 /* Red-AppIcon~iPad-76@2x.png in Resources */,
+				B032135725BC5316004989F1 /* Red-AppIcon~iPad-76@1x.png in Resources */,
+				B032135125BC5316004989F1 /* Red-AppIcon~iPhone-29@2x.png in Resources */,
+				B03213F125BC54EA004989F1 /* White-AppIcon~iPhone-29@3x.png in Resources */,
+				B032132A25BC527F004989F1 /* Brown-AppIcon~iPad-76@2x.png in Resources */,
+				B032135925BC5316004989F1 /* Red-AppIcon~iPad-40@1x.png in Resources */,
+				B032143D25BC6E54004989F1 /* Pink-AppIcon~iPhone-20@3x.png in Resources */,
+				B032135A25BC5316004989F1 /* Red-AppIcon~iPad-29@1x.png in Resources */,
 				B0AD607A1FFC8763009219C9 /* LaunchScreen.storyboard in Resources */,
-				B093BD6925B7DD640058629C /* Icon-Black@2x.png in Resources */,
-				B093BD6A25B7DD640058629C /* Icon-Black@3x.png in Resources */,
+				B03213E825BC54EA004989F1 /* White-AppIcon~iPad-83.5@2x.png in Resources */,
+				B03213EC25BC54EA004989F1 /* White-AppIcon~iPhone-60@2x.png in Resources */,
+				B032132D25BC527F004989F1 /* Brown-AppIcon~iPad-20@2x.png in Resources */,
+				B032143E25BC6E54004989F1 /* Pink-AppIcon~iPhone-29@3x.png in Resources */,
+				B032135D25BC5316004989F1 /* Red-AppIcon~iPad-20@1x.png in Resources */,
+				B03212E025BC4DB6004989F1 /* Green-AppIcon~iPhone-29@2x.png in Resources */,
+				B032134E25BC5316004989F1 /* Red-AppIcon~iPad-83.5@2x.png in Resources */,
+				B03212B725BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@3x.png in Resources */,
+				B03213F225BC54EA004989F1 /* White-AppIcon~iPad-76@1x.png in Resources */,
+				B032130625BC5222004989F1 /* Yellow-AppIcon~iPhone-20@3x.png in Resources */,
+				B03213EE25BC54EA004989F1 /* White-AppIcon~iPhone-40@2x.png in Resources */,
+				B03213C725BC542B004989F1 /* Tan-AppIcon~iPhone-40@2x.png in Resources */,
+				B032135025BC5316004989F1 /* Red-AppIcon~iPad-20@2x.png in Resources */,
+				B03213EA25BC54EA004989F1 /* White-AppIcon~iPad-29@2x.png in Resources */,
+				B03212E625BC4DB6004989F1 /* Green-AppIcon~iPhone-29@3x.png in Resources */,
+				B03212B025BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@2x.png in Resources */,
+				B032135C25BC5316004989F1 /* Red-AppIcon~iPhone-40@3x.png in Resources */,
+				B03212B625BC4AA8004989F1 /* Blue-AppIcon~iPhone-40@3x.png in Resources */,
+				B032135B25BC5316004989F1 /* Red-AppIcon~iPhone-40@2x.png in Resources */,
 				B0229B2F1FFC2DED00A43F7C /* Main.storyboard in Resources */,
+				B03212BA25BC4AA8004989F1 /* Blue-AppIcon~iPad-29@1x.png in Resources */,
+				B03212B925BC4AA8004989F1 /* Blue-AppIcon~iPad-29@2x.png in Resources */,
+				B03212E325BC4DB6004989F1 /* Green-AppIcon~iPhone-40@3x.png in Resources */,
 				B0DBC6BE25703FB9000B8EEB /* Acumin Pro Wide Light.otf in Resources */,
+				B03213E625BC54EA004989F1 /* White-AppIcon~iPad-76@2x.png in Resources */,
+				B032130425BC5222004989F1 /* Yellow-AppIcon~iPad-76@2x.png in Resources */,
+				B03212BC25BC4AA8004989F1 /* Blue-AppIcon~iPhone-60@2x.png in Resources */,
+				B032144025BC6E54004989F1 /* Pink-AppIcon~iPad-83.5@2x.png in Resources */,
+				B03212BF25BC4AA8004989F1 /* Blue-AppIcon~iPad-40@1x.png in Resources */,
+				B032137C25BC536D004989F1 /* Purple-AppIcon~iPhone-29@2x.png in Resources */,
+				B03213E725BC54EA004989F1 /* White-AppIcon~iPad-29@1x.png in Resources */,
+				B03213F525BC54EA004989F1 /* White-AppIcon~iPhone-20@2x.png in Resources */,
+				B03212B525BC4AA8004989F1 /* Blue-AppIcon~iPhone-20@2x.png in Resources */,
+				B03212EA25BC4DB6004989F1 /* Green-AppIcon~iPad-76@2x.png in Resources */,
+				B03213ED25BC54EA004989F1 /* White-AppIcon~iPhone-60@3x.png in Resources */,
+				B032138225BC536D004989F1 /* Purple-AppIcon~iPhone-29@3x.png in Resources */,
+				B03213F025BC54EA004989F1 /* White-AppIcon~iPhone-29@2x.png in Resources */,
+				B03212BB25BC4AA8004989F1 /* Blue-AppIcon~iPhone-29@3x.png in Resources */,
+				B03212E925BC4DB6004989F1 /* Green-AppIcon~iPad-40@1x.png in Resources */,
+				B032144625BC6E54004989F1 /* Pink-AppIcon~iPad-76@2x.png in Resources */,
+				B03213CC25BC542B004989F1 /* Tan-AppIcon~iPhone-60@3x.png in Resources */,
+				B03213C325BC542B004989F1 /* Tan-AppIcon~iPhone-40@3x.png in Resources */,
+				B03212C125BC4AA8004989F1 /* Blue-AppIcon~iPad-76@2x.png in Resources */,
+				B032130125BC5222004989F1 /* Yellow-AppIcon~iPad-40@2x.png in Resources */,
+				B032143B25BC6E54004989F1 /* Pink-AppIcon~iPhone-60@3x.png in Resources */,
+				B03213C125BC542B004989F1 /* Tan-AppIcon~iPhone-29@2x.png in Resources */,
+				B032131025BC5222004989F1 /* Yellow-AppIcon~iPad-29@2x.png in Resources */,
+				B03213C025BC542B004989F1 /* Tan-AppIcon~iPad-76@1x.png in Resources */,
+				B03212DB25BC4DB6004989F1 /* Green-AppIcon~iPhone-40@2x.png in Resources */,
+				B032130325BC5222004989F1 /* Yellow-AppIcon~iPhone-20@2x.png in Resources */,
+				B03213C825BC542B004989F1 /* Tan-AppIcon~iPad-29@2x.png in Resources */,
+				B03213CE25BC542B004989F1 /* Tan-AppIcon~iPad-40@1x.png in Resources */,
 				B0DBC6BF25703FB9000B8EEB /* Acumin Pro Wide Semibold.otf in Resources */,
+				B032138125BC536D004989F1 /* Purple-AppIcon~iPhone-40@2x.png in Resources */,
+				B032135525BC5316004989F1 /* Red-AppIcon~iPhone-20@2x.png in Resources */,
+				B03213C525BC542B004989F1 /* Tan-AppIcon~iPad-29@1x.png in Resources */,
+				B032133125BC527F004989F1 /* Brown-AppIcon~iPhone-60@3x.png in Resources */,
 				B0DBC6C025703FB9000B8EEB /* Acumin Pro Wide Regular.otf in Resources */,
+				B032130F25BC5222004989F1 /* Yellow-AppIcon~iPad-76@1x.png in Resources */,
+				B032132B25BC527F004989F1 /* Brown-AppIcon~iPad-40@1x.png in Resources */,
+				B03213BF25BC542B004989F1 /* Tan-AppIcon~iPad-83.5@2x.png in Resources */,
+				B032137F25BC536D004989F1 /* Purple-AppIcon~iPad-20@1x.png in Resources */,
+				B032137725BC536D004989F1 /* Purple-AppIcon~iPad-29@2x.png in Resources */,
+				B032134D25BC5316004989F1 /* Red-AppIcon~iPad-29@2x.png in Resources */,
+				B03213F425BC54EA004989F1 /* White-AppIcon~iPhone-40@3x.png in Resources */,
+				B032130E25BC5222004989F1 /* Yellow-AppIcon~iPad-20@1x.png in Resources */,
+				B032137E25BC536D004989F1 /* Purple-AppIcon~iPhone-20@3x.png in Resources */,
+				B03213C225BC542B004989F1 /* Tan-AppIcon~iPad-20@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +1057,7 @@
 				B093BD4A25B7CD980058629C /* Size.swift in Sources */,
 				B093BD4125B7CD910058629C /* Device.swift in Sources */,
 				B0229B2C1FFC2DED00A43F7C /* ViewController.swift in Sources */,
+				B090B2D225BD0D0400539812 /* VerticalPanGestureRecognizer.swift in Sources */,
 				B0229B581FFC309700A43F7C /* DiceRoll.swift in Sources */,
 				B077E89E25B4DF9B00771D1F /* History.xcdatamodeld in Sources */,
 				B093BD4825B7CD980058629C /* Version.swift in Sources */,

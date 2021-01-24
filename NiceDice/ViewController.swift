@@ -232,6 +232,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
         if let gestureRecognizer = gestureRecognizer as? UIPanGestureRecognizer {
             
             let velocity = gestureRecognizer.velocity(in: gestureRecognizer.view)
+            print(velocity)
             return abs(velocity.x) < abs(velocity.y)
         }
         return true
@@ -277,14 +278,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
     @objc func matchAppIcon() {
         let menu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         menu.addAction(UIAlertAction(title: "Change App Icon", style: .default) { action in
-            if UIApplication.shared.alternateIconName == nil {
-                UIApplication.shared.setAlternateIconName("White")
-            } else {
-                UIApplication.shared.setAlternateIconName(nil)
+            let theme = Settings.theme
+            let iconName = theme == .black ? nil : theme.rawValue
+            if UIApplication.shared.alternateIconName != iconName {
+                UIApplication.shared.setAlternateIconName(iconName)
             }
         })
         menu.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         menu.view.tintColor = .systemBlue
+        menu.popoverPresentationController?.sourceView = colorView
+        menu.popoverPresentationController?.sourceRect = colorView.bounds
 
         present(menu, animated: true)
     }

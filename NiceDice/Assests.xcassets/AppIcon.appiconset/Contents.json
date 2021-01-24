@@ -13,12 +13,6 @@
       "size" : "20x20"
     },
     {
-      "filename" : "Ipad Settings IOS 7 - 14.png",
-      "idiom" : "iphone",
-      "scale" : "1x",
-      "size" : "29x29"
-    },
-    {
       "filename" : "Ipad Settings IOS 7 - 14@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
@@ -41,18 +35,6 @@
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
-    },
-    {
-      "filename" : "Iphone App  IOS 5,6.png",
-      "idiom" : "iphone",
-      "scale" : "1x",
-      "size" : "57x57"
-    },
-    {
-      "filename" : "Iphone App  IOS 5,6@2x.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "57x57"
     },
     {
       "filename" : "Icon-App-60x60@2x.png",
@@ -101,30 +83,6 @@
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
-    },
-    {
-      "filename" : "Ipad Spotlight 5,6-1.png",
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "50x50"
-    },
-    {
-      "filename" : "Ipad Spotlight 5,6@2x-1.png",
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "50x50"
-    },
-    {
-      "filename" : "Ipad App IOS 5,6-1.png",
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "72x72"
-    },
-    {
-      "filename" : "Ipad App IOS 5,6@2x-1.png",
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "72x72"
     },
     {
       "filename" : "Ipad App IOS 7 - 14-1.png",

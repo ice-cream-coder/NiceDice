@@ -30,6 +30,7 @@ class ContainerViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        view.tintAdjustmentMode = .normal
         
         NotificationCenter.default.addObserver(
             self,
