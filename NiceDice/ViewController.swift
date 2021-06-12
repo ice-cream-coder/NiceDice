@@ -111,7 +111,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIScrollVie
 
     func adjustLayoutForScreenSize() {
         let multiplier: CGFloat
-        if Device.size() >= .screen6_5Inch && view.window!.bounds.size.width > 400 {
+        if Device.size() >= .screen6_1Inch && view.window!.bounds.size.width > 400 {
             multiplier = 1/7
             rightIndicator.isHidden = true
             leftIndicator.isHidden = true
